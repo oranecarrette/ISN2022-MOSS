@@ -6,4 +6,5 @@
  *
  */
 module ProjetACL {
+	requires java.desktop;
 }
