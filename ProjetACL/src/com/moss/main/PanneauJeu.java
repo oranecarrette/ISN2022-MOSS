@@ -11,14 +11,14 @@ import com.moss.personange.Hero;
 
 public class PanneauJeu extends JPanel implements Runnable {
 	// Variables et Constantes
-	final int originalTileSize = 16; // 16x16 tile
+	final int originalTileSize = 16;
 	final int scale = 3;
 
-	public final int tileSize = originalTileSize * scale;// 48x48 tile
+	public final int tileSize = originalTileSize * scale;
 	final int maxScreenCol = 16;
 	final int maxScreenLigne = 12;
-	final int screenLargeur = tileSize * maxScreenCol; // 768pixels
-	final int screenHauteur = tileSize * maxScreenLigne; // 576 pixels
+	final int screenLargeur = tileSize * maxScreenCol; 
+	final int screenHauteur = tileSize * maxScreenLigne; 
 	
 	//FPS
 	int FPS=60;
