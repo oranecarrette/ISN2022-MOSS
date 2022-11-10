@@ -1,4 +1,4 @@
-package projet;
+package com.moss.main;
 
 public class Tile {
 	private int type;
