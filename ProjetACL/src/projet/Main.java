@@ -6,7 +6,7 @@ public class Main {
 		
 		
 		Fenetre fenetre =new Fenetre();
-		
+		pan.startGameThread();
 		//Hero h=new Hero(5,2);
 		/*System.out.println(h);
 		h.moveUp();
