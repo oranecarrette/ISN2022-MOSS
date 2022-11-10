@@ -1,4 +1,4 @@
-package projet;
+package com.moss.main;
 
 public class Main {
 	static PanneauJeu pan=new PanneauJeu();

@@ -1,4 +1,4 @@
-package projet;
+package com.moss.main;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -7,12 +7,14 @@ import java.awt.Graphics2D;
 
 import javax.swing.JPanel;
 
+import com.moss.personange.Hero;
+
 public class PanneauJeu extends JPanel implements Runnable {
 	// Variables et Constantes
 	final int originalTileSize = 16; // 16x16 tile
 	final int scale = 3;
 
-	final int tileSize = originalTileSize * scale;// 48x48 tile
+	public final int tileSize = originalTileSize * scale;// 48x48 tile
 	final int maxScreenCol = 16;
 	final int maxScreenLigne = 12;
 	final int screenLargeur = tileSize * maxScreenCol; // 768pixels
@@ -23,6 +25,7 @@ public class PanneauJeu extends JPanel implements Runnable {
 
 	Clavier clavier=new Clavier();
 	Thread gameThread;
+	Hero hero=new Hero(this,clavier);
 	
 	//positons par defaut du joueur
 	int heroX=100;
@@ -43,25 +46,13 @@ public class PanneauJeu extends JPanel implements Runnable {
 	}
 
 	public void update() {
-		if(clavier.upPressed) {
-			heroY-=speedHero;
-		}
-		if(clavier.downPressed) {
-			heroY+=speedHero;
-		}
-		if(clavier.leftPressed) {
-			heroX-=speedHero;
-		}
-		if(clavier.rightPressed) {
-			heroX+=speedHero;
-		}
+		hero.update();
 	}
 
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
-		g2.setColor(Color.white);
-		g2.fillRect(heroX, heroY, tileSize, tileSize);
+		hero.draw(g2);
 		g2.dispose();
 	}
 

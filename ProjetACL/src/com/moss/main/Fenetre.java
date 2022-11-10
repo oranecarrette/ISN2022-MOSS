@@ -1,4 +1,4 @@
-package projet;
+package com.moss.main;
 
 import javax.swing.JFrame;
 
