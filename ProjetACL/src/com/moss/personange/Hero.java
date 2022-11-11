@@ -10,107 +10,93 @@ import javax.imageio.ImageIO;
 import com.moss.main.Clavier;
 import com.moss.main.PanneauJeu;
 
-public class Hero extends Personnage{
+public class Hero extends Personnage {
 	PanneauJeu pan;
 	Clavier clavier;
-	
+
 	public Hero(PanneauJeu pan, Clavier clavier) {
-		this.pan=pan;
-		this.clavier=clavier;
+		this.pan = pan;
+		this.clavier = clavier;
 		setDefaultValue();
 		getPlayerImage();
 	}
-	
+
 	public void setDefaultValue() {
-		x=100;
-		y=100;
-		speed=4;
-		direction="down";
+		x = 100;
+		y = 100;
+		speed = 4;
+		direction = "down";
 	}
-	
+
 	public void getPlayerImage() {
 		try {
-			up=ImageIO.read(getClass().getResourceAsStream("/Hero/up/up_0.png"));
-			down=ImageIO.read(getClass().getResourceAsStream("/Hero/down/down_0.png"));
-			right=ImageIO.read(getClass().getResourceAsStream("/Hero/right/right_1.png"));
-			left=ImageIO.read(getClass().getResourceAsStream("/Hero/left/left_0.png"));
-			
+			up = ImageIO.read(getClass().getResourceAsStream("/Hero/up/up_0.png"));
+			down = ImageIO.read(getClass().getResourceAsStream("/Hero/down/down_0.png"));
+			right = ImageIO.read(getClass().getResourceAsStream("/Hero/right/right_1.png"));
+			left = ImageIO.read(getClass().getResourceAsStream("/Hero/left/left_0.png"));
 
-		}catch(IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
-			}
+		}
 	}
-	
+
 	public void update() {
-		if(clavier.upPressed) {
-			direction="up";
-			y-=speed;
+		if (clavier.upPressed) {
+			direction = "up";
+			y -= speed;
 		}
-		if(clavier.downPressed) {
-			direction="down";
-			y+=speed;
+		if (clavier.downPressed) {
+			direction = "down";
+			y += speed;
 		}
-		if(clavier.leftPressed) {
-			direction="left";
-			x-=speed;
+		if (clavier.leftPressed) {
+			direction = "left";
+			x -= speed;
 		}
-		if(clavier.rightPressed) {
-			direction="right";
-			x+=speed;
+		if (clavier.rightPressed) {
+			direction = "right";
+			x += speed;
 		}
 	}
-	
+
 	public void draw(Graphics2D g2) {
-		BufferedImage image=null;
-		
-		switch(direction) {
+		BufferedImage image = null;
+
+		switch (direction) {
 		case "up":
-			image=up;
+			image = up;
 			break;
 		case "down":
-			image=down;
+			image = down;
 			break;
 		case "left":
-			image=left;
+			image = left;
 			break;
 		case "right":
-			image=right;
+			image = right;
 			break;
 		}
 		g2.drawImage(image, x, y, pan.tileSize, pan.tileSize, null);
-		
-		//g2.fillRect(x,y, pan.tileSize, pan.tileSize);
+
+		// g2.fillRect(x,y, pan.tileSize, pan.tileSize);
 	}
 
-	/*public Hero() { //constructeur par defaut
-		this.posX=0;
-		this.posY=0;
-	}
-	
-	public Hero(int posX,int posY) { //constructeur avec attributs renseignes
-		this.posX=posX;
-		this.posY=posY;					
-	}
-	
-	public String toString() {
-		return "posx= "+posX+"\tposY= "+posY; //\t = tabulations 
-	}
-	
-	public void moveUp() {
-		posY--;
-	}
-	
-	public void moveDown() {
-		posY++;
-	}
-	
-	public void moveRight() {
-		posX++;
-	}
-	
-	public void moveLeft() {
-		posX--;
-	}
-	*/
-	
+	/*
+	 * public Hero() { //constructeur par defaut this.posX=0; this.posY=0; }
+	 * 
+	 * public Hero(int posX,int posY) { //constructeur avec attributs renseignes
+	 * this.posX=posX; this.posY=posY; }
+	 * 
+	 * public String toString() { return "posx= "+posX+"\tposY= "+posY; //\t =
+	 * tabulations }
+	 * 
+	 * public void moveUp() { posY--; }
+	 * 
+	 * public void moveDown() { posY++; }
+	 * 
+	 * public void moveRight() { posX++; }
+	 * 
+	 * public void moveLeft() { posX--; }
+	 */
+
 }
