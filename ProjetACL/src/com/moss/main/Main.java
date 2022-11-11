@@ -1,11 +1,12 @@
 package com.moss.main;
 
 public class Main {
-	static PanneauJeu pan = new PanneauJeu();
-
+	
+	static GamePanel pan=new GamePanel();
+	
 	public static void main(String[] args) {
-
-		Fenetre fenetre = new Fenetre();
+		
+		Window window = new Window();
 		pan.startGameThread();
 		// Hero h=new Hero(5,2);
 		/*
@@ -16,6 +17,7 @@ public class Main {
 		// System.out.println(t.getType());
 		// Labyrinth lab=new Labyrinth(20, 20);
 		// lab.afficherLabyrinth();
+		
 	}
 
 }

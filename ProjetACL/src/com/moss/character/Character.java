@@ -1,12 +1,12 @@
-package com.moss.personange;
+package com.moss.character;
 
 import java.awt.image.BufferedImage;
 
-public class Personnage {
-	public int x, y;
+public class Character {
+	public int x,y;
 	public int speed;
-
+	
 	public BufferedImage up, down, right, left;
 	public String direction;
-
 }
+
