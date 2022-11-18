@@ -1,16 +1,17 @@
-package com.moss.main;
+package com.moss.labyrinth;
 
-public class Labyrinth {
+public class Lab {
+	
 	int sizex,sizey;
 	private Tile[][] lab;
 	
-	public Labyrinth(int sizex,int sizey) {
+	public Lab (int sizex,int sizey) {
 		this.sizex = sizex;
 		this.sizey = sizey;
 		lab = new Tile[sizex][sizey];
 		for(int i=0;i<sizex;i++) {
 			for(int j=0;j<sizey;j++) {
-				lab[i][j] = new Tile();
+				lab[i][j] = new Ground();
 			}
 		}
 	}
@@ -23,5 +24,5 @@ public class Labyrinth {
 			System.out.print("\n");
 		}
 	}
-	
+
 }
