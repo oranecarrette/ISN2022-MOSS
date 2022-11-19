@@ -1,18 +1,21 @@
 package com.moss.main;
 
 public class Tile {
-	private int type;
-	//0 => ground
-	//1 => wall
+	public int x,y;
+	private static int type;
 	
-	public Tile() {
-		this.type = 0;
+	public Tile(int x, int y) {
+		this.x = x;
+		this.y = y;
+		Tile.type = 0;
 	}
-	public Tile(int type) {
-		this.type = type;
+	public Tile(int x, int y, int type) {
+		this.x = x;
+		this.y = y;
+		Tile.type = type;
 	}
-	public int getType() {
-		return type;
+	public static int getType(int x, int y) {
+		return Tile.type;
 	}
 	
 }

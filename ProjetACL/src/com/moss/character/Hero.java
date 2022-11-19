@@ -9,6 +9,7 @@ import javax.imageio.ImageIO;
 
 import com.moss.main.GamePanel;
 import com.moss.main.Keyboard;
+import com.moss.main.Tile;
 
 public class Hero extends Character{
 	GamePanel pan;
@@ -17,15 +18,14 @@ public class Hero extends Character{
 	public Hero(GamePanel pan, Keyboard keyboard) {
 		this.pan=pan;
 		this.keyboard=keyboard; 
-		setDefaultValue();
-		getPlayerImage();
-	}
-	
-	public void setDefaultValue() { //default values
+		
+		//default values
 		x = 100; //x position
 		y = 100; //y position
 		speed = 4; //move with a step of 4
-		direction = "down"; //picture's direction
+		direction = "down"; //picture's direction		
+		
+		getPlayerImage();
 	}
 	
 	public void getPlayerImage() {
@@ -40,22 +40,61 @@ public class Hero extends Character{
 		}
 	}
 	
+	
+	public boolean isWall(String direction) {
+		boolean wall = true;
+		
+		switch (direction) {
+		case "up": 
+			if (Tile.getType(x-1,y) != 1) { 
+				wall = false ;
+			}
+			break;
+		case "down":
+			if (Tile.getType(x+1,y) != 1) {
+				wall = false ;
+			}			
+			break;
+		case "left":
+			if (Tile.getType(x,y-1) != 1) {
+				wall = false ;
+			}			
+			break;
+		case "right":
+			if (Tile.getType(x,y+1) != 1) {
+				wall = false ;
+			}				
+			break;
+		}
+		
+		return wall;
+	}
+	
+	
 	public void update() { //positions update
 		if(keyboard.upPressed) { //press on the Z key
-			direction = "up";
-			y -= speed; //the hero goes up
+			if (isWall("up") == false) { //if the next tile isn't a wall...
+				direction = "up";
+				y -= speed; //...the hero goes up
+			}
 		}
 		if(keyboard.downPressed) { //press on the S key
-			direction = "down";
-			y += speed; //the hero goes down
+			if (isWall("down") == false) {
+				direction = "down";
+				y += speed; //the hero goes down
+			}
 		}
 		if(keyboard.leftPressed) { //press on the Q key
-			direction = "left";
-			x -= speed; //the hero goes left
+			if (isWall("left") == false) {
+				direction = "left";
+				x -= speed; //the hero goes left
+			}
 		}
 		if(keyboard.rightPressed) { //press on the D key
-			direction = "right";
-			x += speed; //the hero goes right
+			if (isWall("right") == false) {
+				direction = "right";
+				x += speed; //the hero goes right
+			}
 		}
 	}
 	
@@ -76,6 +115,7 @@ public class Hero extends Character{
 			image = right;
 			break;
 		}
+		
 		g2.drawImage(image, x, y, pan.tileSize, pan.tileSize, null); 
 	}
 
