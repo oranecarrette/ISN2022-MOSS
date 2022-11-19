@@ -9,7 +9,7 @@ import javax.imageio.ImageIO;
 
 import com.moss.main.GamePanel;
 import com.moss.main.Keyboard;
-import com.moss.main.Tile;
+import com.moss.maze.Tile;
 
 public class Hero extends Character{
 	GamePanel pan;
@@ -40,28 +40,28 @@ public class Hero extends Character{
 		}
 	}
 	
-	
+	//the origin of the game panel's baseframe is at the top left corner
 	public boolean isWall(String direction) {
 		boolean wall = true;
 		
 		switch (direction) {
 		case "up": 
-			if (Tile.getType(x-1,y) != 1) { 
+			if (Tile.getTypeWithPositions(x-1,y) != 1) { 
 				wall = false ;
 			}
 			break;
 		case "down":
-			if (Tile.getType(x+1,y) != 1) {
+			if (Tile.getTypeWithPositions(x+1,y) != 1) {
 				wall = false ;
 			}			
 			break;
 		case "left":
-			if (Tile.getType(x,y-1) != 1) {
+			if (Tile.getTypeWithPositions(x,y-1) != 1) {
 				wall = false ;
 			}			
 			break;
 		case "right":
-			if (Tile.getType(x,y+1) != 1) {
+			if (Tile.getTypeWithPositions(x,y+1) != 1) {
 				wall = false ;
 			}				
 			break;
