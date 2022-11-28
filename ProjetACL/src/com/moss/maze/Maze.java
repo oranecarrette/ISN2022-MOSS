@@ -1,67 +1,133 @@
 package com.moss.maze;
 
 import com.moss.main.GamePanel; 
-import com.moss.maze.Tile;
 
 import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
 import javax.imageio.ImageIO;
 
 public class Maze {
+	
 	GamePanel pan;
-	private Tile[][] maze;
-	
-	public BufferedImage ground, wall;
-	
+	Tile[] tile; //types of tile stored in a table
+	public static int maze[][]; 
 	
 	public Maze(GamePanel pan) {
 		this.pan=pan;
+		tile = new Tile[5]; //5 types of tile for now
+		maze = new int[pan.maxScreenCol][pan.maxScreenRow]; //the maze!!! finally
 		
-		maze = new Tile[16][12];
-		for(int col=0;col<16;col++) {
-			for(int row=0;row<12;row++) {
-				maze[col][row] = new Tile(col,row,0);
-			}	
-		} 
-		maze[4][5] = new Tile(4,5,1);
-				
 		getTileImage();
+		loadMaze("/mazes/maze1.txt");
 	}
 	
-	public void showMaze() {
-		for(int i=0;i<12;i++) {
-			for(int j=0;j<16;j++) {
-				System.out.print(Tile.getTypeWithPositions(i,j));
+	public void loadMaze(String filePath) {
+		try {
+			InputStream is = getClass().getResourceAsStream(filePath);
+			BufferedReader br = new BufferedReader(new InputStreamReader(is));
+			
+			int column = 0;
+			int row = 0;
+			
+			while (column < pan.maxScreenCol && row < pan.maxScreenRow) {
+				String line = br.readLine();
+				
+				while (column < pan.maxScreenCol) {
+					String numbers[] = line.split(" ");
+					int tileType = Integer.parseInt(numbers[column]);
+					
+					maze[column][row] = tileType;
+					column ++;
+				}
+				
+				if (column == pan.maxScreenCol) {
+					column = 0;
+					row ++;
+				}
 			}
-			System.out.print("\n");
+			br.close();
+		} catch(Exception e) {
+			
 		}
+	}
+	
+	//the origin of the game panel's baseframe is at the top left corner
+	public static boolean isWall(int x, int y, String direction) {
+		
+		boolean wall = true;
+		
+		switch (direction) {
+		case "up": 
+			if (maze[x-1][y] != 1) { 
+				wall = false ;
+			}
+			break;
+		case "down":
+			if (maze[x+1][y] != 1) {
+				wall = false ;
+			}			
+			break;
+		case "left":
+			if (maze[x][y-1] != 1) {
+				wall = false ;
+			}			
+			break;
+		case "right":
+			if (maze[x][y+1] != 1) {
+				wall = false ;
+			}				
+			break;
+		}
+		
+		return wall;
 	}
 	
 	public void getTileImage() {
 		try {
-			ground = ImageIO.read(getClass().getResourceAsStream("/tiles/ground.png")); //picture of the ground
-			wall = ImageIO.read(getClass().getResourceAsStream("/tiles/wall.png")); //picture of the wall
+			tile[0] = new Tile(); //ground
+			tile[0].image = ImageIO.read(getClass().getResourceAsStream("/tiles/ground.png")); //picture of the ground
+			
+			tile[1] = new Tile(); //wall
+			tile[1].image = ImageIO.read(getClass().getResourceAsStream("/tiles/wall.png")); //picture of the wall
+		
+			tile[2] = new Tile(); //treasure chest
+			//picture of the treasure chest
+			
+			tile[3] = new Tile(); //hole
+			//picture of a hole
+			
+			tile[4] = new Tile(); //portal
+			//picture of a portal
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 	
 	public void draw(Graphics2D g2) {
-		BufferedImage image = null;
-
-		for (int i=0;i<16;i++) {
-			for(int j=0;j<12;j++) {
-				switch (Tile.getTypeWithPositions(i,j)) {
-				case 0:
-					image = ground; 
-					break;
-				case 1:
-					image = wall;
-					break;
-				}
-			g2.drawImage(image, 48*i, 48*j, pan.tileSize, pan.tileSize, null);	
+		
+		int column = 0;
+		int row = 0;
+		int x = 0;
+		int y = 0 ;
+		
+		while (column < pan.maxScreenCol && row < pan.maxScreenRow) {
+			int tileType = maze[column][row];
+			
+			g2.drawImage(tile[tileType].image, x, y, pan.tileSize, pan.tileSize, null);
+			column ++; //next column
+			x += pan.tileSize; //next column in a graphic way
+					
+			if (column == pan.maxScreenCol) { //if we are at the last column 
+				column = 0;
+				x = 0;
+				row ++; //next row
+				y += pan.tileSize; //next row in a graphic way
 			}
 		}
+		
 	}
 }

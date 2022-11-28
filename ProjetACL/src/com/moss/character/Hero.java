@@ -10,6 +10,7 @@ import javax.imageio.ImageIO;
 import com.moss.main.GamePanel;
 import com.moss.main.Keyboard;
 import com.moss.maze.Tile;
+import com.moss.maze.Maze; 
 
 public class Hero extends Character{
 	GamePanel pan;
@@ -22,7 +23,7 @@ public class Hero extends Character{
 		//default values
 		x = 100; //x position
 		y = 100; //y position
-		speed = 4; //move with a step of 4
+		speed = 2; //move with a step of 2
 		direction = "down"; //picture's direction		
 		
 		getPlayerImage();
@@ -40,58 +41,30 @@ public class Hero extends Character{
 		}
 	}
 	
-	//the origin of the game panel's baseframe is at the top left corner
-	public boolean isWall(String direction) {
-		boolean wall = true;
-		
-		switch (direction) {
-		case "up": 
-			if (Tile.getTypeWithPositions(x-1,y) != 1) { 
-				wall = false ;
-			}
-			break;
-		case "down":
-			if (Tile.getTypeWithPositions(x+1,y) != 1) {
-				wall = false ;
-			}			
-			break;
-		case "left":
-			if (Tile.getTypeWithPositions(x,y-1) != 1) {
-				wall = false ;
-			}			
-			break;
-		case "right":
-			if (Tile.getTypeWithPositions(x,y+1) != 1) {
-				wall = false ;
-			}				
-			break;
-		}
-		
-		return wall;
-	}
-	
-	
 	public void update() { //positions update
+		int xTile = x/pan.tileSize;
+		int yTile = y/pan.tileSize;
+		
 		if(keyboard.upPressed) { //press on the Z key
-			if (isWall("up") == false) { //if the next tile isn't a wall...
+			if (Maze.isWall(xTile,yTile,"up") == false) { //if the next tile isn't a wall...
 				direction = "up";
 				y -= speed; //...the hero goes up
 			}
 		}
 		if(keyboard.downPressed) { //press on the S key
-			if (isWall("down") == false) {
+			if (Maze.isWall(xTile,yTile,"down") == false) {
 				direction = "down";
 				y += speed; //the hero goes down
 			}
 		}
 		if(keyboard.leftPressed) { //press on the Q key
-			if (isWall("left") == false) {
+			if (Maze.isWall(xTile,yTile,"left") == false) {
 				direction = "left";
 				x -= speed; //the hero goes left
 			}
 		}
 		if(keyboard.rightPressed) { //press on the D key
-			if (isWall("right") == false) {
+			if (Maze.isWall(xTile,yTile,"right") == false) {
 				direction = "right";
 				x += speed; //the hero goes right
 			}

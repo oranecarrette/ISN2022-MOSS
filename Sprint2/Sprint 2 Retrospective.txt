@@ -1,0 +1,12 @@
+CE QUI A BIEN MARCHE :
+- L'ensemble des tâches assignées ont été réalisées
+
+CE QUI N'A PAS BIEN MARCHE :
+- Les tâches définies se recoupaient trop entre elles, entraînant une codépendance de 3 des membres du groupe
+-> Il faut mieux segmenter les tâches pour faciliter le travail individuel d'implémentation
+
+- La conception n'a pas été assez réfléchie en amont, ce qui a donné lieu à des problèmes d'implémentation (création de nouveaux attributs inutiles, fonctions mal définies...)
+-> Il faut discuter plus précisément de la manière dont on conçoit les choses avant de se jeter sur l'implémentation
+
+- La communication a parfois été difficile, notamment en raison de l'emploi du temps chargé mais aussi d'un certain manque d'anticipation
+-> Il faut mieux mesurer la difficulté des tâches, s'y prendre plus en amont, et éventuellement réduire la charge de travail si l'emploi du temps ne permet pas de travailler autant que souhaité
