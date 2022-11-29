@@ -52,33 +52,7 @@ public class Hero extends Character{
 	}
 	
 	public void update() { //positions update
-		if(keyboard.upPressed || keyboard.downPressed ||
-				keyboard.leftPressed||keyboard.rightPressed) {
-			if (keyboard.upPressed) {//press on the Z key
-				direction = "up";
-				y -= speed;//the hero goes up
-			}
-			if (keyboard.downPressed) { //press on the S key
-				direction = "down";
-				y += speed;//the hero goes down
-			}
-			if (keyboard.leftPressed) {//press on the Q key
-				direction = "left";
-				x -= speed;//the hero goes left
-			}
-			if (keyboard.rightPressed) {//press on the D key
-				direction = "right";
-				x += speed;//the hero goes right
-			}
-			spriteCounter++;
-			if(spriteCounter>12) {
-				spriteNum++;
-				if(spriteNum==5) {
-					spriteNum=1;
-				}
-				spriteCounter=0;
-			}
-		}
+
 		//x and y are the positions of the top left corner of the hero
 		int column = (x/pan.tileSize);
 		int proutCol = (x%pan.tileSize);
@@ -125,7 +99,14 @@ public class Hero extends Character{
 				speed = 0;
 			}
 		}
-		
+		spriteCounter++;
+		if(spriteCounter>12) {
+			spriteNum++;
+			if(spriteNum==5) {
+				spriteNum=1;
+			}
+			spriteCounter=0;
+		}
 	}
 	
 	public void draw(Graphics2D g2) {
