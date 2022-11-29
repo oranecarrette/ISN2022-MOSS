@@ -52,60 +52,61 @@ public class Hero extends Character{
 	}
 	
 	public void update() { //positions update
+		if (keyboard.upPressed || keyboard.donwPressed || keyboard.leftPressed || keyboard.rightPressed) {
+			//x and y are the positions of the top left corner of the hero
+			int column = (x/pan.tileSize);
+			int proutCol = (x%pan.tileSize);
+			int row = (y/pan.tileSize);
+			int proutRow = (y%pan.tileSize);
+			speed = 2;
 
-		//x and y are the positions of the top left corner of the hero
-		int column = (x/pan.tileSize);
-		int proutCol = (x%pan.tileSize);
-		int row = (y/pan.tileSize);
-		int proutRow = (y%pan.tileSize);
-		speed = 2;
-		
-		if(keyboard.upPressed) { //press on the Z key
-			direction = "up";
-			if ((Maze.isWall(column,row,"up") == true) && (proutRow == 0)) {
-				speed = 0; //...the hero goes up
-			} else if (((Maze.isWall(column,row,"up") == true) || (Maze.isWall(column+1,row,"up") == true)) && (proutRow==0)) { //if the next tile isn't a wall...
-				speed = 0; //...the hero goes up
-			} else { y -= speed;
+			if(keyboard.upPressed) { //press on the Z key
+				direction = "up";
+				if ((Maze.isWall(column,row,"up") == true) && (proutRow == 0)) {
+					speed = 0; //...the hero goes up
+				} else if (((Maze.isWall(column,row,"up") == true) || (Maze.isWall(column+1,row,"up") == true)) && (proutRow==0)) { //if the next tile isn't a wall...
+					speed = 0; //...the hero goes up
+				} else { y -= speed;
+				}
 			}
-		}
-		if(keyboard.downPressed) { //press on the S key
-			direction = "down";
-			if ((proutCol == 0) && (Maze.isWall(column,row,"down") == false)){ 
-				y += speed; //the hero goes down
-		    } else if ((Maze.isWall(column,row,"down") == false) && (Maze.isWall(column+1,row,"down") == false)) {
-				y += speed; //the hero goes down
-			} else { 
-				speed = 0;
+			if(keyboard.downPressed) { //press on the S key
+				direction = "down";
+				if ((proutCol == 0) && (Maze.isWall(column,row,"down") == false)){ 
+					y += speed; //the hero goes down
+			    } else if ((Maze.isWall(column,row,"down") == false) && (Maze.isWall(column+1,row,"down") == false)) {
+					y += speed; //the hero goes down
+				} else { 
+					speed = 0;
+				}
 			}
-		}
-		if(keyboard.leftPressed) { //press on the Q key
-			direction = "left";
-			if ((Maze.isWall(column,row,"left") == false) || (proutCol != 0)) {
-				x -= speed; //the hero goes left
-			} else if ((Maze.isWall(column,row,"left") == false) && (Maze.isWall(column,row+1,"left") == false)) {
-				x -= speed; //the hero goes left
-			} else { 
-				speed = 0;
+			if(keyboard.leftPressed) { //press on the Q key
+				direction = "left";
+				if ((Maze.isWall(column,row,"left") == false) || (proutCol != 0)) {
+					x -= speed; //the hero goes left
+				} else if ((Maze.isWall(column,row,"left") == false) && (Maze.isWall(column,row+1,"left") == false)) {
+					x -= speed; //the hero goes left
+				} else { 
+					speed = 0;
+				}
 			}
-		}
-		if(keyboard.rightPressed) { //press on the D key
-			direction = "right";
-			if ((proutRow == 0) && (Maze.isWall(column,row,"right") == false)) {
-				x += speed; //the hero goes right
-			} else if ((Maze.isWall(column,row,"right") == false) && (Maze.isWall(column,row+1,"right") == false)) {
-				x += speed; //the hero goes right
-			} else { 
-				speed = 0;
+			if(keyboard.rightPressed) { //press on the D key
+				direction = "right";
+				if ((proutRow == 0) && (Maze.isWall(column,row,"right") == false)) {
+					x += speed; //the hero goes right
+				} else if ((Maze.isWall(column,row,"right") == false) && (Maze.isWall(column,row+1,"right") == false)) {
+					x += speed; //the hero goes right
+				} else { 
+					speed = 0;
+				}
 			}
-		}
-		spriteCounter++;
-		if(spriteCounter>12) {
-			spriteNum++;
-			if(spriteNum==5) {
-				spriteNum=1;
+			spriteCounter++;
+			if(spriteCounter>12) {
+				spriteNum++;
+				if(spriteNum==5) {
+					spriteNum=1;
+				}
+				spriteCounter=0;
 			}
-			spriteCounter=0;
 		}
 	}
 	
