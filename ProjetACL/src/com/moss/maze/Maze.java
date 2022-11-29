@@ -56,29 +56,29 @@ public class Maze {
 	}
 	
 	//the origin of the game panel's baseframe is at the top left corner
-	public static boolean isWall(int x, int y, String direction) {
-		
-		boolean wall = true;
+	public static boolean isWall(int column, int row, String direction) {
+
+		boolean wall = false;
 		
 		switch (direction) {
 		case "up": 
-			if (maze[x-1][y] != 1) { 
-				wall = false ;
+			if (maze[column][row-1] == 1) { 
+				wall = true ;
 			}
 			break;
 		case "down":
-			if (maze[x+1][y] != 1) {
-				wall = false ;
-			}			
+			if (maze[column][row+1] == 1) {
+				wall = true ;
+			}		
 			break;
 		case "left":
-			if (maze[x][y-1] != 1) {
-				wall = false ;
+			if (maze[column-1][row] == 1) {
+				wall = true ;
 			}			
 			break;
 		case "right":
-			if (maze[x][y+1] != 1) {
-				wall = false ;
+			if (maze[column+1][row] == 1) {
+				wall = true ;
 			}				
 			break;
 		}

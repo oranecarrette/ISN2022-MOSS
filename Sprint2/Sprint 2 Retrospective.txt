@@ -4,6 +4,7 @@ CE QUI A BIEN MARCHE :
 CE QUI N'A PAS BIEN MARCHE :
 - Les tâches définies se recoupaient trop entre elles, entraînant une codépendance de 3 des membres du groupe
 -> Il faut mieux segmenter les tâches pour faciliter le travail individuel d'implémentation
+-> OU ALORS Il faut que les membres amenés à travailler entre eux soient des binômes solides (au-delà de binômes, cela devient compliqué à  gérer)
 
 - La conception n'a pas été assez réfléchie en amont, ce qui a donné lieu à des problèmes d'implémentation (création de nouveaux attributs inutiles, fonctions mal définies...)
 -> Il faut discuter plus précisément de la manière dont on conçoit les choses avant de se jeter sur l'implémentation
