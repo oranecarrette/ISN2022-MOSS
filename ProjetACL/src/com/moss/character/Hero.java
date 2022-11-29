@@ -52,7 +52,7 @@ public class Hero extends Character{
 	}
 	
 	public void update() { //positions update
-		if (keyboard.upPressed || keyboard.donwPressed || keyboard.leftPressed || keyboard.rightPressed) {
+		if (keyboard.upPressed || keyboard.downPressed || keyboard.leftPressed || keyboard.rightPressed) {
 			//x and y are the positions of the top left corner of the hero
 			int column = (x/pan.tileSize);
 			int proutCol = (x%pan.tileSize);
