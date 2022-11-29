@@ -1,0 +1,6 @@
+- Animation des déplacements du héros : FAIT
+- Gestion des collisions du héros : FAIT
+- Création d'un labyrinthe à partir d'un fichier texte : FAIT
+- Création de 2 types de tile : FAIT
+
+Backlog 2 respecté

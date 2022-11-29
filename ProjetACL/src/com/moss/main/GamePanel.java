@@ -8,16 +8,16 @@ import java.awt.Graphics2D;
 import javax.swing.JPanel;
 
 import com.moss.character.Hero;
+import com.moss.maze.Maze;
 
 public class GamePanel extends JPanel implements Runnable {
-	//the origin of the game panel's baseframe is at the top left corner
 	
 	//variables and constants
 	final int originalTileSize = 16; //16x16 pixels per tile 
 	final int scale = 3; 
 	public final int tileSize = originalTileSize * scale; //48x48 pixels per tile, in order to make it visible with a screen resolution of 1080x720 pixels
-	final int maxScreenCol = 16; //16 columns
-	final int maxScreenRow = 12; //12 rows 
+	public final int maxScreenCol = 16; //16 columns
+	public final int maxScreenRow = 12; //12 rows 
 	final int screenWidth = tileSize * maxScreenCol; //768 pixels
 	final int screenHeight = tileSize * maxScreenRow; //576 pixels
 	
@@ -26,13 +26,14 @@ public class GamePanel extends JPanel implements Runnable {
 
 	Keyboard keyboard = new Keyboard(); //new instance of the Keyboard Class 
 	Thread gameThread; 
+	Maze maze = new Maze(this);
 	Hero hero = new Hero(this,keyboard); //new instance of the Hero Class
 	
 	//positions per default of the Hero
 	int heroX = 100;
 	int heroY = 100;
 	int speedHero = 4;
-
+	
 	public GamePanel() { //GamePanel's constructor
 		this.setPreferredSize(new Dimension(screenWidth, screenHeight)); //panel's dimensions
 		this.setBackground(Color.black); //background color
@@ -53,6 +54,7 @@ public class GamePanel extends JPanel implements Runnable {
 	public void paintComponent(Graphics g) { //draw on the GamePanel
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g; //transtypage to a class of better performances
+		maze.draw(g2);
 		hero.draw(g2); //draw the hero on the GamePanel
 		g2.dispose(); 
 	}

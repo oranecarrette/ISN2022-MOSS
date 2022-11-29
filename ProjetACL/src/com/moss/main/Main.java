@@ -1,22 +1,20 @@
 package com.moss.main;
 
+import com.moss.maze.*;
+
+import javax.swing.JFrame;
+
 public class Main {
 	
 	static GamePanel pan=new GamePanel();
 	
 	public static void main(String[] args) {
 		
+		//Window's creation
 		Window window = new Window();
+		
+		//Start of the game's thread on the game panel
 		pan.startGameThread();
-		// Hero h=new Hero(5,2);
-		/*
-		 * System.out.println(h); h.moveUp(); System.out.println(h); h.moveRight();
-		 * System.out.println(h);
-		 */
-		// Tile t=new Tile();
-		// System.out.println(t.getType());
-		// Labyrinth lab=new Labyrinth(20, 20);
-		// lab.afficherLabyrinth();
 		
 	}
 

@@ -1,0 +1,19 @@
+FONCTIONNALITES
+- Le héros gagne en arrivant sur le trésor
+- Le héros perd s'il tombe dans un trou
+- Le héros a 3 vies
+- Un monstre apparaît à chaque début de partie, le héros perd 1 vie s'il le rencontre
+
+
+REPARTITION DES TACHES
+- Le jeu est gagné quand le héros est arrivé au trésor : fin du thread et affichage "Congrats"
+
+- Le jeu est perdu quand le héros tombe dans un trou : fin du thread et affichage "Game Over" 
+
+- Un monstre apparaît à chaque début de partie : classe Monster et affichage
+
+- Le héros possède 3 vies
+- Le héros perd :
+	- 3 vies en tombant dans un trou
+	- 1 vie en rencontrant un monstre
+
