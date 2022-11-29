@@ -52,7 +52,6 @@ public class Hero extends Character{
 	}
 	
 	public void update() { //positions update
-<<<<<<< HEAD
 		if(keyboard.upPressed || keyboard.downPressed ||
 				keyboard.leftPressed||keyboard.rightPressed) {
 			if (keyboard.upPressed) {//press on the Z key
@@ -78,7 +77,8 @@ public class Hero extends Character{
 					spriteNum=1;
 				}
 				spriteCounter=0;
-=======
+			}
+		}
 		//x and y are the positions of the top left corner of the hero
 		int column = (x/pan.tileSize);
 		int proutCol = (x%pan.tileSize);
@@ -123,7 +123,6 @@ public class Hero extends Character{
 				x += speed; //the hero goes right
 			} else { 
 				speed = 0;
->>>>>>> Suzy1
 			}
 		}
 		
