@@ -1,6 +1,7 @@
 package com.moss.character;
 
 import java.awt.Graphics2D;
+import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -22,9 +23,10 @@ public class Hero extends Character {
 
 		// default values
 		x = 48; // x position
-		y = 48; // y position
+		y = 40; // y position
 		speed = 2; // move with a step of 2
 		direction = "down"; // picture's direction
+		solidArea = new Rectangle(8, 16, 32, 32);
 
 		getPlayerImage();
 	}
@@ -87,60 +89,39 @@ public class Hero extends Character {
 		}
 	}
 
-	public void update() { // positions update
-		// x and y are the positions of the top left corner of the hero
-		int column = (x / pan.tileSize);
-		int proutCol = (x % pan.tileSize);
-		int row = (y / pan.tileSize);
-		int proutRow = (y % pan.tileSize);
-		speed = 2;
-
+	public void update() {
 		if (keyboard.upPressed || keyboard.downPressed || keyboard.leftPressed || keyboard.rightPressed) {
-
-			if (keyboard.upPressed) { // press on the Z key
+			if (keyboard.upPressed) {
 				direction = "up";
-				if ((Maze.isWall(column, row, "up") == true) && (proutRow == 0)) {
-					speed = 0; // ...the hero goes up
-				} else if (((Maze.isWall(column, row, "up") == true) || (Maze.isWall(column + 1, row, "up") == true))
-						&& (proutRow == 0)) { // if the next tile isn't a wall...
-					speed = 0; // ...the hero goes up
-				} else {
-					y -= speed;
-				}
 			}
-			if (keyboard.downPressed) { // press on the S key
+			if (keyboard.downPressed) {
 				direction = "down";
-				if ((proutCol == 0) && (Maze.isWall(column, row, "down") == false)) {
-					y += speed; // the hero goes down
-				} else if ((Maze.isWall(column, row, "down") == false)
-						&& (Maze.isWall(column + 1, row, "down") == false)) {
-					y += speed; // the hero goes down
-				} else {
-					speed = 0;
-				}
 			}
-			if (keyboard.leftPressed) { // press on the Q key
+			if (keyboard.leftPressed) {
 				direction = "left";
-				if ((Maze.isWall(column, row, "left") == false) || (proutCol != 0)) {
-					x -= speed; // the hero goes left
-				} else if ((Maze.isWall(column, row, "left") == false)
-						&& (Maze.isWall(column, row + 1, "left") == false)) {
-					x -= speed; // the hero goes left
-				} else {
-					speed = 0;
-				}
 			}
-			if (keyboard.rightPressed) { // press on the D key
+			if (keyboard.rightPressed) {
 				direction = "right";
-				if ((proutRow == 0) && (Maze.isWall(column, row, "right") == false)) {
-					x += speed; // the hero goes right
-				} else if ((Maze.isWall(column, row, "right") == false)
-						&& (Maze.isWall(column, row + 1, "right") == false)) {
-					x += speed; // the hero goes right
-				} else {
-					speed = 0;
+			}
+			collisionOn = false;
+			pan.collision.checkTile(this);
+			if (collisionOn == false) {
+				switch (direction) {
+				case "up":
+					y -= speed;
+					break;
+				case "down":
+					y += speed;
+					break;
+				case "left":
+					x -= speed;
+					break;
+				case "right":
+					x += speed;
+					break;
 				}
 			}
+
 			spriteCounter++;
 			if (spriteCounter > 12) {
 				spriteNum++;
@@ -150,6 +131,7 @@ public class Hero extends Character {
 				spriteCounter = 0;
 			}
 		}
+
 	}
 
 	public void draw(Graphics2D g2) {

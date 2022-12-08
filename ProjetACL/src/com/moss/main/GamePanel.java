@@ -28,6 +28,7 @@ public class GamePanel extends JPanel implements Runnable {
 
 	Keyboard keyboard = new Keyboard(); // new instance of the Keyboard Class
 	Thread gameThread;
+	public Collision collision=new Collision(this);
 	Maze maze = new Maze(this);
 	Hero hero = new Hero(this, keyboard); // new instance of the Hero Class
 

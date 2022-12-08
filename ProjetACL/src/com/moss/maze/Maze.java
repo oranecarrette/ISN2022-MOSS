@@ -15,14 +15,15 @@ import javax.imageio.ImageIO;
 public class Maze {
 
 	GamePanel pan;
-	Tile[] tile; // types of tile stored in a table
-	public static int maze[][];
+	public Tile[] tile; // types of tile stored in a table
+	public int maze[][];
 
 	public Maze(GamePanel pan) {
 		this.pan = pan;
 		tile = new Tile[5]; // 5 types of tile for now
 		maze = new int[pan.maxScreenRow][pan.maxScreenCol]; // the maze!!! finally
 		getTileImage();
+		getCollisionInformation();
 		loadMaze(Main.currentDir + "/src/mazes/maze1.txt");
 	}
 
@@ -47,6 +48,11 @@ public class Maze {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public void getCollisionInformation() {
+		tile[1].impassable=true;
+		tile[2].impassable=true;
 	}
 
 	public void loadMaze(String mapPath) {
@@ -81,59 +87,9 @@ public class Maze {
 			System.out.print("\n");
 		}
 
-		/*
-		 * try { InputStream is = getClass().getResourceAsStream(filePath);
-		 * BufferedReader br = new BufferedReader(new InputStreamReader(is));
-		 * 
-		 * int column = 0; int row = 0;
-		 * 
-		 * while (column < pan.maxScreenCol && row < pan.maxScreenRow) { String line =
-		 * br.readLine();
-		 * 
-		 * while (column < pan.maxScreenCol) { String numbers[] = line.split(" "); int
-		 * tileType = Integer.parseInt(numbers[column]);
-		 * 
-		 * maze[column][row] = tileType; column ++; }
-		 * 
-		 * if (column == pan.maxScreenCol) { column = 0; row ++; } } br.close(); }
-		 * catch(Exception e) {
-		 * 
-		 * } for(int i=0;i<pan.maxScreenCol;i++) { for(int j=0;j<pan.maxScreenRow;j++) {
-		 * System.out.print(maze[i][j]); } System.out.print("\n"); }
-		 */
-
 	}
 
-	// the origin of the game panel's baseframe is at the top left corner
-	public static boolean isWall(int column, int row, String direction) {
-
-		boolean wall = false;
-
-		switch (direction) {
-		case "up":
-			if (maze[column][row - 1] == 1) {
-				wall = true;
-			}
-			break;
-		case "down":
-			if (maze[column][row + 1] == 1) {
-				wall = true;
-			}
-			break;
-		case "left":
-			if (maze[column - 1][row] == 1) {
-				wall = true;
-			}
-			break;
-		case "right":
-			if (maze[column + 1][row] == 1) {
-				wall = true;
-			}
-			break;
-		}
-
-		return wall;
-	}
+	
 
 	public void draw(Graphics2D g2) {
 		int col = 0;
