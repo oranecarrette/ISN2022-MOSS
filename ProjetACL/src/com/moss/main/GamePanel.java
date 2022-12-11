@@ -8,6 +8,7 @@ import java.awt.Graphics2D;
 import javax.swing.JPanel;
 
 import com.moss.character.Hero;
+import com.moss.character.Monster;
 import com.moss.maze.Maze;
 
 public class GamePanel extends JPanel implements Runnable {
@@ -31,6 +32,8 @@ public class GamePanel extends JPanel implements Runnable {
 	public Collision collision=new Collision(this);
 	Maze maze = new Maze(this);
 	Hero hero = new Hero(this, keyboard); // new instance of the Hero Class
+	Monster monster = new Monster(this);
+	Life life = new Life(this);
 
 	public GamePanel() { // GamePanel's constructor
 		this.setPreferredSize(new Dimension(screenWidth, screenHeight)); // panel's dimensions
@@ -47,6 +50,7 @@ public class GamePanel extends JPanel implements Runnable {
 
 	public void update() {
 		hero.update(); // hero's positions update
+		monster.update();
 	}
 
 	public void paintComponent(Graphics g) { // draw on the GamePanel
@@ -54,6 +58,8 @@ public class GamePanel extends JPanel implements Runnable {
 		Graphics2D g2 = (Graphics2D) g; // transtypage to a class of better performances
 		maze.draw(g2);
 		hero.draw(g2); // draw the hero on the GamePanel
+		monster.draw(g2);
+		life.draw(g2);
 		g2.dispose();
 	}
 

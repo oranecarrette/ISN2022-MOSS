@@ -11,7 +11,6 @@ import javax.imageio.ImageIO;
 import com.moss.main.GamePanel;
 import com.moss.main.Keyboard;
 import com.moss.main.Main;
-import com.moss.maze.Maze;
 
 public class Hero extends Character {
 	GamePanel pan;
@@ -27,7 +26,7 @@ public class Hero extends Character {
 		speed = 2; // move with a step of 2
 		direction = "down"; // picture's direction
 		solidArea = new Rectangle(8, 16, 32, 32);
-
+		
 		getPlayerImage();
 	}
 
@@ -197,6 +196,7 @@ public class Hero extends Character {
 		}
 
 		g2.drawImage(image, x, y, pan.tileSize, pan.tileSize, null);
+		
 	}
 
 }
