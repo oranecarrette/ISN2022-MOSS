@@ -1,0 +1,14 @@
+Sprint 3 Review
+
+- Examiner et corriger les bogues et les problèmes dans le code : FAIT
+- Modifier la gestion des collisions : FAIT
+- Mise en œuvre des 3 vies initiales du héros : FAIT
+- Apparition du monstre au début du jeu : FAIT
+
+- Mise en œuvre du trou et du trésor : PAS FAIT
+- Le monstre attaque le héros : PAS FAIT
+- Apparition des messages "Congrats" ou "Game Over" à la fin du jeu : PAS FAIT
+
+Backlog 3 partiellement respecté
+
+Traduit avec www.DeepL.com/Translator (version gratuite)

@@ -1,0 +1,9 @@
+Sprint 3 - Retrospective
+
+CE QUI A BIEN MARCHE :
+- Os erros do código foram corrigidos e novas funcionalidades foram acrescentadas.
+
+CE QUI N'A PAS BIEN MARCHE :
+- Não foi possível acrescentar todas as funcionalidades previstas no Backlog 2
+- A quantidade de tarefas a serem feitas não foram condizentes com o tempo disponível
+-> É preciso selecionar melhor as tarefas a serem feitas e tentar prever melhor quanto tempo ´levará para implementar cada uma delas para que o que tenha sido planejado seja entregue dentro do prazo
