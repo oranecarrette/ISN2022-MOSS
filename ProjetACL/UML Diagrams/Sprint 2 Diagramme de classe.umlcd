@@ -1,4 +1,1378 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_sBWQkHAZEe2jupa-j754jQ">
-  <modelElement href="platform:/resource/ProjetACL/UML%20Diagrams/Sprint%202%20Diagramme%20de%20classe.uml#_r_ZIwHAZEe2jupa-j754jQ"/>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_sBWQkHAZEe2jupa-j754jQ">
+  <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sVxBYXAZEe2jupa-j754jQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_NNQHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbMT8HAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_NNQXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbM7AHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_NNQnAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_NNQ3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbMT8XAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_NNRHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_NNRXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_NNRnAZEe2jupa-j754jQ" aggregationKind="NONE" name="up1" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ56gHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_NNR3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_NNSHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_ObYHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbTosXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_ObYXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbUPwHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_ObYnAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_ObY3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbTosnAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_ObZHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ObZXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_ObZnAZEe2jupa-j754jQ" aggregationKind="NONE" name="up2" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saxdMHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_ObZ3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ObaHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_PCcHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbU20HAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_PCcXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbU20nAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_PCcnAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_PCc3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbU20XAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_PCdHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_PCdXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_PCdnAZEe2jupa-j754jQ" aggregationKind="NONE" name="up3" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sayEQXAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_PCd3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_PCeHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_QQkHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbVd4HAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_QQkXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbVd4nAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_QQknAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_QQk3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbVd4XAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_QQlHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_QQlXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_QQlnAZEe2jupa-j754jQ" aggregationKind="NONE" name="up4" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sazSYHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_QQl3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_QQmHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_Q3oHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbWE8HAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_Q3oXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbWsAHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_Q3onAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_Q3o3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbWE8XAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_Q3pHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_Q3pXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_Q3pnAZEe2jupa-j754jQ" aggregationKind="NONE" name="down1" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa0ggHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_Q3p3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_Q3qHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_ResHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbWsAXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_ResXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbXTEHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_ResnAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_Res3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbWsAnAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_RetHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_RetXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_RetnAZEe2jupa-j754jQ" aggregationKind="NONE" name="down2" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa1uoHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_Ret3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ReuHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_Ss0HAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbXTEXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_Ss0XAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbX6IHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_Ss0nAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_Ss03AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbXTEnAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_Ss1HAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_Ss1XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_Ss1nAZEe2jupa-j754jQ" aggregationKind="NONE" name="down3" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa28wHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_Ss13AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_Ss2HAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_TT4HAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbYhMHAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_TT4XAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbZIQHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_TT4nAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_TT43AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbYhMXAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_TT5HAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_TT5XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_TT5nAZEe2jupa-j754jQ" aggregationKind="NONE" name="down4" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa3j0XAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_TT53AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_TT6HAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_T68HAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbZIQXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_T68XAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbZvUHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_T68nAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_T683AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbZIQnAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_T69HAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_T69XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_T69nAZEe2jupa-j754jQ" aggregationKind="NONE" name="right1" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa4x8HAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_T693AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_T6-HAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_UiAHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbZvUXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_UiAXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbaWYHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_UiAnAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_UiA3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbZvUnAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_UiBHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_UiBXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_UiBnAZEe2jupa-j754jQ" aggregationKind="NONE" name="right2" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa5ZAXAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_UiB3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_UiCHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_VwIHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sba9cHAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_VwIXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbbkgHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_VwInAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_VwI3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sba9cXAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_VwJHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_VwJXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_VwJnAZEe2jupa-j754jQ" aggregationKind="NONE" name="right3" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa6nIHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_VwJ3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_VwKHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_WXMHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbbkgXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_WXMXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbcLkHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_WXMnAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_WXM3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbbkgnAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_WXNHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_WXNXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_WXNnAZEe2jupa-j754jQ" aggregationKind="NONE" name="right4" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa7OMXAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_WXN3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_WXOHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_W-QHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbcLkXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_W-QXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbcyoHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_W-QnAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_XlUHAZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbcLknAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_XlUXAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_XlUnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_XlU3AZEe2jupa-j754jQ" aggregationKind="NONE" name="left1" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa8cUHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_XlVHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_XlVXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_YMYHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbdZsHAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_YMYXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbeAwHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_YMYnAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_YMY3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbdZsXAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_YMZHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_YMZXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_YMZnAZEe2jupa-j754jQ" aggregationKind="NONE" name="left2" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa9DYXAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_YMZ3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_YMaHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_YzcHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbeAwXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_YzcXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sben0HAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_YzcnAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_Yzc3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbeAwnAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_YzdHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_YzdXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_YzdnAZEe2jupa-j754jQ" aggregationKind="NONE" name="left3" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa-RgXAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_Yzd3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_YzeHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_v_ZagHAZEe2jupa-j754jQ" source="_v_ZaiXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sben0XAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_v_ZagXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbfO4HAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_v_ZagnAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_v_Zag3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sben0nAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_ZahHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ZahXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_v_ZahnAZEe2jupa-j754jQ" aggregationKind="NONE" name="left4" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa-4knAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_v_Zah3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ZaiHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_wAql0HAZEe2jupa-j754jQ" sourceAnchor="184.0,0.0" targetAnchor="117.0,546.0" superClass="_v_ZaiXAZEe2jupa-j754jQ" subClass="_wBRp0HAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZAioHAZEe2jupa-j754jQ"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_wBGDoHAZEe2jupa-j754jQ" sourceAnchor="193.0,0.0" targetAnchor="204.0,132.0" target="_wBRp0HAZEe2jupa-j754jQ" source="_wCOsEHAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbQlYHAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_wBGDoXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbQlYnAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_wBGDonAZEe2jupa-j754jQ" text="">
+      <visualProperties xmi:id="_wVrzkHAZEe2jupa-j754jQ" position="-48.0,-20.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_wBGDo3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbQlYXAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVrMgHAZEe2jupa-j754jQ" position="-18.0,-90.0"/>
+      <visibility xmi:id="_wBGDpHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wBGDpXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_wBGDpnAZEe2jupa-j754jQ" aggregationKind="NONE" name="hero" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saLnUHAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVrzkXAZEe2jupa-j754jQ" position="-48.0,34.0"/>
+      <stereotypes xmi:id="_wBGDp3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saMOYHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wBGDqHAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wBGDqXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_wBMxUHAZEe2jupa-j754jQ" sourceAnchor="234.0,132.0" targetAnchor="223.0,0.0" target="_wCOsEHAZEe2jupa-j754jQ" source="_wBRp0HAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbM7AXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_wBMxUXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbNiEHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_wBMxUnAZEe2jupa-j754jQ" text="">
+      <visualProperties xmi:id="_wVowQHAZEe2jupa-j754jQ" position="2.0,-2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_wBMxU3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbM7AnAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVoJMHAZEe2jupa-j754jQ" position="-18.0,34.0"/>
+      <visibility xmi:id="_wBMxVHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wBMxVXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_wBMxVnAZEe2jupa-j754jQ" aggregationKind="NONE" name="pan" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ_aEHAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVpXUHAZEe2jupa-j754jQ" position="2.0,-90.0"/>
+      <visibility xmi:id="_wBMxV3AZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wBMxWHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_wBRCwHAZEe2jupa-j754jQ" sourceAnchor="0.0,89.0" targetAnchor="264.0,104.0" target="_wCyswHAZEe2jupa-j754jQ" source="_wBRp0HAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbNiEXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_wBRCwXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbOJIHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_wBRCwnAZEe2jupa-j754jQ" text="">
+      <visualProperties xmi:id="_wVp-YHAZEe2jupa-j754jQ" position="-35.0,-24.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_wBRCw3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbNiEnAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVpXUXAZEe2jupa-j754jQ" position="-32.0,-57.0"/>
+      <visibility xmi:id="_wBRCxHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wBRCxXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_wBRCxnAZEe2jupa-j754jQ" aggregationKind="NONE" name="keyboard" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saABIXAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVqlcHAZEe2jupa-j754jQ" position="38.0,2.0"/>
+      <visibility xmi:id="_wBRCx3AZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wBRCyHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_wB4GwHAZEe2jupa-j754jQ" sourceAnchor="0.0,189.0" targetAnchor="132.0,208.0" target="_wCyswHAZEe2jupa-j754jQ" source="_wCOsEHAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbOJIXAZEe2jupa-j754jQ"/>
+    <bendpoints xmi:id="_7bcnEHAZEe2jupa-j754jQ" sourceX="-334" targetY="353"/>
+    <stereotypes xmi:id="_wCKaoHAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbOwMHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_wCJzkHAZEe2jupa-j754jQ" text="">
+      <visualProperties xmi:id="_wVtBsHAZEe2jupa-j754jQ" position="1.9999999999998863,-187.9999999999999"/>
+    </nameVisual>
+    <sourceRole xmi:id="_wCJzkXAZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbOJInAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVsaoHAZEe2jupa-j754jQ" position="-37.0,-57.0"/>
+      <visibility xmi:id="_wCLBsHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCKaoXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_wCJzknAZEe2jupa-j754jQ" aggregationKind="NONE" name="keyboard" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saIkAXAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVtBsXAZEe2jupa-j754jQ" position="-79.99999999999983,42.99999999999977"/>
+      <visibility xmi:id="_wCLBsnAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCLBsXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_wCMP0HAZEe2jupa-j754jQ" sourceAnchor="0.0,122.0" targetAnchor="347.0,137.0" target="_wCOsEHAZEe2jupa-j754jQ" source="_wFxvUHAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbRzgHAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_wCMP0XAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbSakHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_wCMP0nAZEe2jupa-j754jQ" text="">
+      <visualProperties xmi:id="_wVvd8HAZEe2jupa-j754jQ" position="-42.0,-24.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_wCMP03AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbRzgXAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVu24nAZEe2jupa-j754jQ" position="-30.0,2.0"/>
+      <visibility xmi:id="_wCMP1HAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCMP1XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_wCMP1nAZEe2jupa-j754jQ" aggregationKind="NONE" name="pan" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saRt8XAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVwFAHAZEe2jupa-j754jQ" position="22.0,2.0"/>
+      <stereotypes xmi:id="_wCMP13AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saSVAHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCMP2HAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCMP2XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_wCNd8HAZEe2jupa-j754jQ" source="_wCOsEHAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbPXQHAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_wCNd8XAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbPXQnAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_wCNd8nAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_wCNd83AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbPXQXAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wCNd9HAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCNd9XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_wCNd9nAZEe2jupa-j754jQ" aggregationKind="NONE" name="gameThread" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saJLEXAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wCNd93AZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCNd-HAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_wCOFAHAZEe2jupa-j754jQ" sourceAnchor="347.0,107.0" targetAnchor="0.0,92.0" target="_wFxvUHAZEe2jupa-j754jQ" source="_wCOsEHAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbP-UHAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_wCOFAXAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbP-UnAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_wCOFAnAZEe2jupa-j754jQ" text="">
+      <visualProperties xmi:id="_wVtowXAZEe2jupa-j754jQ" position="0.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_wCOFA3AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbP-UXAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVtowHAZEe2jupa-j754jQ" position="86.0,-57.0"/>
+      <visibility xmi:id="_wCOFBHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCOFBXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_wCOFBnAZEe2jupa-j754jQ" aggregationKind="NONE" name="maze" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saJyIXAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVtownAZEe2jupa-j754jQ" position="-103.0,-57.0"/>
+      <visibility xmi:id="_wCOFB3AZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOFCHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_wDfQUHAZEe2jupa-j754jQ" sourceAnchor="217.0,31.0" targetAnchor="0.0,274.0" target="_wCOsEHAZEe2jupa-j754jQ" source="_wELM0HAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbQlY3AZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_wEJXonAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbRMcXAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_wEIwkHAZEe2jupa-j754jQ" text="">
+      <visualProperties xmi:id="_wVu24HAZEe2jupa-j754jQ" position="-6.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_wEJXoHAZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbRMcHAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVuP0HAZEe2jupa-j754jQ" position="15.0,-57.0"/>
+      <visibility xmi:id="_wEJ-sXAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wEJ-sHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_wEJXoXAZEe2jupa-j754jQ" aggregationKind="NONE" name="pan" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saRG4HAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVu24XAZEe2jupa-j754jQ" position="-72.0,-57.0"/>
+      <visibility xmi:id="_wEJ-s3AZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wEJ-snAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_wFjs4HAZEe2jupa-j754jQ" sourceAnchor="235.0,185.0" targetAnchor="103.0,0.0" target="_wG-pNXAZEe2jupa-j754jQ" source="_wFxvUHAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbSakXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_wFjs4XAZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbTBoHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_wFjs4nAZEe2jupa-j754jQ" text="">
+      <visualProperties xmi:id="_wVwsEHAZEe2jupa-j754jQ" position="-47.5,28.42857142857133"/>
+    </nameVisual>
+    <sourceRole xmi:id="_wFjs43AZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbSaknAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVwFAXAZEe2jupa-j754jQ" position="-17.5,26.333333333333258"/>
+      <visibility xmi:id="_wFjs5HAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wFjs5XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_wFjs5nAZEe2jupa-j754jQ" aggregationKind="NONE" name="tile" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saSVAXAZEe2jupa-j754jQ"/>
+      <visualProperties xmi:id="_wVwsEXAZEe2jupa-j754jQ" position="2.5,-81.33333333333326"/>
+      <visibility xmi:id="_wFjs53AZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wFjs6HAZEe2jupa-j754jQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_wGXlMHAZEe2jupa-j754jQ" source="_wG-pNXAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbTBoXAZEe2jupa-j754jQ"/>
+    <stereotypes xmi:id="_wG-CI3AZEe2jupa-j754jQ" name="Reference">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbTosHAZEe2jupa-j754jQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_wG-CIHAZEe2jupa-j754jQ" text=""/>
+    <sourceRole xmi:id="_wG-CIXAZEe2jupa-j754jQ" aggregationKind="NONE" name="">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbTBonAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wG-pMXAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wG-pMHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_wG-CInAZEe2jupa-j754jQ" aggregationKind="NONE" name="image" navigable="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saVYUHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wG-pM3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wG-pMnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_v_ZaiXAZEe2jupa-j754jQ" name="Character" associationsOut="_v_NNQHAZEe2jupa-j754jQ _v_ObYHAZEe2jupa-j754jQ _v_PCcHAZEe2jupa-j754jQ _v_QQkHAZEe2jupa-j754jQ _v_Q3oHAZEe2jupa-j754jQ _v_ResHAZEe2jupa-j754jQ _v_Ss0HAZEe2jupa-j754jQ _v_TT4HAZEe2jupa-j754jQ _v_T68HAZEe2jupa-j754jQ _v_UiAHAZEe2jupa-j754jQ _v_VwIHAZEe2jupa-j754jQ _v_WXMHAZEe2jupa-j754jQ _v_W-QHAZEe2jupa-j754jQ _v_YMYHAZEe2jupa-j754jQ _v_YzcHAZEe2jupa-j754jQ _v_ZagHAZEe2jupa-j754jQ" subclassedBy="_wAql0HAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWZTgHAZEe2jupa-j754jQ"/>
+    <visualProperties xmi:id="_v_ZainAZEe2jupa-j754jQ" position="794.0,34.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_v_Zai3AZEe2jupa-j754jQ" label="+"/>
+    <attributes xmi:id="_v_ZajHAZEe2jupa-j754jQ" name="x">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ2QIHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_ZajXAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ3eQHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_ZajnAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ4FUHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_Zaj3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ZakHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_ZakXAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_ZaknAZEe2jupa-j754jQ" name="speed">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ4sYHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_Zak3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ5TcHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_ZalHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ZalXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_ZalnAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_Zal3AZEe2jupa-j754jQ" name="up1">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ56gHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_ZamHAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ56gXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_ZamXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ6hkHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_ZamnAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_Zam3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_ZanHAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_ZanXAZEe2jupa-j754jQ" name="direction">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ7IoHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_ZannAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ7vsHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_Zan3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ZaoHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_ZaoXAZEe2jupa-j754jQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_ZaonAZEe2jupa-j754jQ" defaultValue="0" name="spriteCounter">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ8WwHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_Zao3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ890HAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_ZapHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ZapXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_ZapnAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_Zap3AZEe2jupa-j754jQ" defaultValue="1" name="spriteNum">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ890XAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_ZaqHAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ-L8HAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_ZaqXAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ZaqnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_Zaq3AZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_ZarHAZEe2jupa-j754jQ" name="y">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_savoAHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_ZarXAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sawPEHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_ZarnAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saw2IHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_Zar3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ZasHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_ZasXAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_ZasnAZEe2jupa-j754jQ" name="up2">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saxdMHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_Zas3AZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saxdMXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_ZatHAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sayEQHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_ZatXAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ZatnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_Zat3AZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_ZauHAZEe2jupa-j754jQ" name="up3">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sayEQXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_ZauXAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sayrUHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_ZaunAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sayrUXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_Zau3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_ZavHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_ZavXAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_ZavnAZEe2jupa-j754jQ" name="up4">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sazSYHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_Zav3AZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sazSYXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_ZawHAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saz5cHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aBkHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aBkXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aBknAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aBk3AZEe2jupa-j754jQ" name="down1">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa0ggHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aBlHAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa1HkHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aBlXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa1HkXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aBlnAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aBl3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aBmHAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aBmXAZEe2jupa-j754jQ" name="down2">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa1uoHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aBmnAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa1uoXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aBm3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa2VsHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aBnHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aBnXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aBnnAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aBn3AZEe2jupa-j754jQ" name="down3">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa28wHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aBoHAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa28wXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aBoXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa3j0HAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aBonAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aBo3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aBpHAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aBpXAZEe2jupa-j754jQ" name="down4">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa3j0XAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aBpnAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa4K4HAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aBp3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa4K4XAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aBqHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aBqXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aBqnAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aBq3AZEe2jupa-j754jQ" name="right1">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa4x8HAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aBrHAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa4x8XAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aBrXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa5ZAHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aBrnAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aBr3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aBsHAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aBsXAZEe2jupa-j754jQ" name="right2">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa5ZAXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aBsnAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa6AEHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aBs3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa6AEXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aBtHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aBtXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aBtnAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aBt3AZEe2jupa-j754jQ" name="right3">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa6nIHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aBuHAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa6nIXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aBuXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa7OMHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aBunAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aBu3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aBvHAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aBvXAZEe2jupa-j754jQ" name="right4">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa7OMXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aBvnAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa71QHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aBv3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa71QXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aBwHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aBwXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aBwnAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aBw3AZEe2jupa-j754jQ" name="left1">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa8cUHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aBxHAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa8cUXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aBxXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa9DYHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aBxnAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aBx3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aByHAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aByXAZEe2jupa-j754jQ" name="left2">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa9DYXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aBynAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa9qcHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aBy3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa-RgHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aBzHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aBzXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aBznAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aBz3AZEe2jupa-j754jQ" name="left3">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa-RgXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aB0HAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa-4kHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aB0XAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa-4kXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aB0nAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aB03AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aB1HAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_v_aB1XAZEe2jupa-j754jQ" name="left4">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa-4knAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_v_aB1nAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sa_foHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_v_aB13AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbAGsHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_v_aB2HAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_v_aB2XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_v_aB2nAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_wCOsEHAZEe2jupa-j754jQ" name="GamePanel" associationsIn="_wBMxUHAZEe2jupa-j754jQ _wCMP0HAZEe2jupa-j754jQ _wDfQUHAZEe2jupa-j754jQ" associationsOut="_wBGDoHAZEe2jupa-j754jQ _wB4GwHAZEe2jupa-j754jQ _wCNd8HAZEe2jupa-j754jQ _wCOFAHAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWs1gHAZEe2jupa-j754jQ"/>
+    <visualProperties xmi:id="_wCOsEXAZEe2jupa-j754jQ" position="738.0,985.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_wCOsEnAZEe2jupa-j754jQ" label="+"/>
+    <attributes xmi:id="_wCOsE3AZEe2jupa-j754jQ" defaultValue="16" name="originalTileSize">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saBPQHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsFHAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saB2UHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsFXAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsFnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsF3AZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsGHAZEe2jupa-j754jQ" defaultValue="3" name="scale">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saCdYHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsGXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saDEcXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsGnAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsG3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsHHAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsHXAZEe2jupa-j754jQ" defaultValue="originalTileSize * scale" name="tileSize">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saDrgHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsHnAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saESkHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsH3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCOsIHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsIXAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsInAZEe2jupa-j754jQ" defaultValue="16" name="maxScreenCol">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saESkXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsI3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saE5oXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsJHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCOsJXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsJnAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsJ3AZEe2jupa-j754jQ" defaultValue="12" name="maxScreenRow">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saFgsHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsKHAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saGHwHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsKXAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCOsKnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsK3AZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsLHAZEe2jupa-j754jQ" defaultValue="tileSize * maxScreenCol" name="screenWidth">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saGHwXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsLXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saGu0HAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsLnAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsL3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsMHAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsMXAZEe2jupa-j754jQ" defaultValue="tileSize * maxScreenRow" name="screenHeight">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saGu0XAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsMnAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saHV4XAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsM3AZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsNHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsNXAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsNnAZEe2jupa-j754jQ" defaultValue="60" name="FPS">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saH88HAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsN3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saIkAHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsOHAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsOXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsOnAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsO3AZEe2jupa-j754jQ" defaultValue="new Keyboard()" name="keyboard">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saIkAXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsPHAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saJLEHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsPXAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsPnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsP3AZEe2jupa-j754jQ" name="Keyboard">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sW8GEHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsQHAZEe2jupa-j754jQ" name="gameThread">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saJLEXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsQXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saJyIHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsQnAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsQ3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsRHAZEe2jupa-j754jQ" name="Thread">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZlKYHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsRXAZEe2jupa-j754jQ" defaultValue="new Maze(this)" name="maze">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saJyIXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsRnAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saLAQHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsR3AZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsSHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsSXAZEe2jupa-j754jQ" name="Maze">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXKIgHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsSnAZEe2jupa-j754jQ" defaultValue="new Hero(this,keyboard)" name="hero">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saLnUHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wCOsS3AZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsTHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsTXAZEe2jupa-j754jQ" name="Hero">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWkSoHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsTnAZEe2jupa-j754jQ" defaultValue="100" name="heroX">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saMOYXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsT3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saNcgHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsUHAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsUXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsUnAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsU3AZEe2jupa-j754jQ" defaultValue="100" name="heroY">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saNcgXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsVHAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saODkXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsVXAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsVnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsV3AZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCOsWHAZEe2jupa-j754jQ" defaultValue="4" name="speedHero">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saOqoHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsWXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saOqonAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsWnAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wCOsW3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCOsXHAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_wCOsXXAZEe2jupa-j754jQ" name="GamePanel">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWvRwHAZEe2jupa-j754jQ"/>
+      <keywords xmi:id="_wCOsXnAZEe2jupa-j754jQ" keyword="create"/>
+      <visibility xmi:id="_wCOsX3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCOsYHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_wCOsYXAZEe2jupa-j754jQ">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWwf4HAZEe2jupa-j754jQ"/>
+        <type xmi:id="_wCOsYnAZEe2jupa-j754jQ" name="GamePanel">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWs1gHAZEe2jupa-j754jQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_wCOsY3AZEe2jupa-j754jQ" name="startGameThread">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWwf4XAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wCOsZHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCOsZXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_wCOsZnAZEe2jupa-j754jQ" name="update">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWxG8HAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wCOsZ3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCOsaHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_wCOsaXAZEe2jupa-j754jQ" name="run">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWxuAHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCOsanAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWyVEHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_wCOsa3AZEe2jupa-j754jQ" name="Annotations">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWzjMHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCOsbHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCOsbXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_wCOsbnAZEe2jupa-j754jQ" name="paintComponent">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZm_kHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wCOsb3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCOscHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_wCOscXAZEe2jupa-j754jQ" name="g">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZm_kXAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wCOscnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wCOsc3AZEe2jupa-j754jQ" name="Graphics">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZFbIHAZEe2jupa-j754jQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_wBRp0HAZEe2jupa-j754jQ" name="Hero" associationsIn="_wBGDoHAZEe2jupa-j754jQ" associationsOut="_wBMxUHAZEe2jupa-j754jQ _wBRCwHAZEe2jupa-j754jQ" generalizations="_wAql0HAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWkSoHAZEe2jupa-j754jQ"/>
+    <visualProperties xmi:id="_wBRp0XAZEe2jupa-j754jQ" position="727.0,628.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_wBRp0nAZEe2jupa-j754jQ" label="+"/>
+    <attributes xmi:id="_wBRp03AZEe2jupa-j754jQ" name="pan">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZ_aEHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wBRp1HAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saABIHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wBRp1XAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wBRp1nAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wBRp13AZEe2jupa-j754jQ" name="GamePanel">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWs1gHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wBRp2HAZEe2jupa-j754jQ" name="keyboard">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saABIXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wBRp2XAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saAoMHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wBRp2nAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wBRp23AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wBRp3HAZEe2jupa-j754jQ" name="Keyboard">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sW8GEHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_wBRp3XAZEe2jupa-j754jQ" name="getPlayerImage">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWmH0HAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wBRp3nAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wBRp33AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_wBRp4HAZEe2jupa-j754jQ" name="update">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWnV8HAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wBRp4XAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wBRp4nAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_wBRp43AZEe2jupa-j754jQ" name="Hero">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY-tcHAZEe2jupa-j754jQ"/>
+      <keywords xmi:id="_wBRp5HAZEe2jupa-j754jQ" keyword="create"/>
+      <visibility xmi:id="_wBRp5XAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wBRp5nAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_wBRp53AZEe2jupa-j754jQ">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY_7knAZEe2jupa-j754jQ"/>
+        <type xmi:id="_wBRp6HAZEe2jupa-j754jQ" name="Hero">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWkSoHAZEe2jupa-j754jQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_wBRp6XAZEe2jupa-j754jQ" name="pan">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY-tcXAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wBRp6nAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wBRp63AZEe2jupa-j754jQ" name="GamePanel">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWs1gHAZEe2jupa-j754jQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_wBRp7HAZEe2jupa-j754jQ" name="keyboard">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY_UgHAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wBRp7XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wBRp7nAZEe2jupa-j754jQ" name="Keyboard">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sW8GEHAZEe2jupa-j754jQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_wBRp73AZEe2jupa-j754jQ" name="draw">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZcAcHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wBRp8HAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wBRp8XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_wBRp8nAZEe2jupa-j754jQ" name="g2">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZcAcXAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wBRp83AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wBRp9HAZEe2jupa-j754jQ" name="Graphics2D">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY2KkHAZEe2jupa-j754jQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_wCyswHAZEe2jupa-j754jQ" name="Keyboard" associationsIn="_wBRCwHAZEe2jupa-j754jQ _wB4GwHAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sW8GEHAZEe2jupa-j754jQ"/>
+    <visualProperties xmi:id="_wCyswXAZEe2jupa-j754jQ" position="272.0,613.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_wCyswnAZEe2jupa-j754jQ" label="+"/>
+    <attributes xmi:id="_wCysw3AZEe2jupa-j754jQ" name="upPressed">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saP4wHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCysxHAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saP4wXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_wCysxXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saQf0HAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCysxnAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCysx3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCysyHAZEe2jupa-j754jQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCysyXAZEe2jupa-j754jQ" name="downPressed">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbBU0HAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCysynAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbB74HAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_wCysy3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbB74XAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCyszHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCyszXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCysznAZEe2jupa-j754jQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCysz3AZEe2jupa-j754jQ" name="leftPressed">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbCi8HAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCys0HAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbCi8XAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_wCys0XAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbDKAHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCys0nAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCys03AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCys1HAZEe2jupa-j754jQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wCys1XAZEe2jupa-j754jQ" name="rightPressed">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbDxEHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCys1nAZEe2jupa-j754jQ" name="MultiDeclaration">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbDxEXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_wCys13AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sbEYIHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCys2HAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCys2XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wCys2nAZEe2jupa-j754jQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_wCys23AZEe2jupa-j754jQ" name="keyTyped">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZrRAHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCys3HAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZr4EHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_wCys3XAZEe2jupa-j754jQ" name="Annotations">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZsfIHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCys3nAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCys33AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_wCys4HAZEe2jupa-j754jQ" name="e">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZrRAXAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wCys4XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wCys4nAZEe2jupa-j754jQ" name="KeyEvent">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZK6sHAZEe2jupa-j754jQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_wCys43AZEe2jupa-j754jQ" name="keyPressed">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZtGMHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCys5HAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZuUUHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_wCys5XAZEe2jupa-j754jQ" name="Annotations">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZu7YHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCys5nAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCys53AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_wCys6HAZEe2jupa-j754jQ" name="e">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZttQHAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wCys6XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wCys6nAZEe2jupa-j754jQ" name="KeyEvent">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZK6sHAZEe2jupa-j754jQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_wCys63AZEe2jupa-j754jQ" name="keyReleased">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZvicHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wCys7HAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZwJgHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_wCys7XAZEe2jupa-j754jQ" name="Annotations">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZwwkHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wCys7nAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wCys73AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_wCys8HAZEe2jupa-j754jQ" name="e">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZvicXAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wCys8XAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wCys8nAZEe2jupa-j754jQ" name="KeyEvent">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZK6sHAZEe2jupa-j754jQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_wELM0HAZEe2jupa-j754jQ" name="Main" associationsOut="_wDfQUHAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXCMsHAZEe2jupa-j754jQ"/>
+    <visualProperties xmi:id="_wELM0XAZEe2jupa-j754jQ" position="332.0,1228.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_wELM0nAZEe2jupa-j754jQ" label="+"/>
+    <attributes xmi:id="_wELM03AZEe2jupa-j754jQ" defaultValue="new GamePanel()" name="pan" staticAttribute="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saRG4HAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wELM1HAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saRt8HAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wELM1XAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wELM1nAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wELM13AZEe2jupa-j754jQ" name="GamePanel">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWs1gHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_wELM2HAZEe2jupa-j754jQ" name="main" staticOperation="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXDa0HAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wELM2XAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wELM2nAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_wELM23AZEe2jupa-j754jQ" name="args">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXEB4HAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wELM3HAZEe2jupa-j754jQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_wELM3XAZEe2jupa-j754jQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_wEze8HAZEe2jupa-j754jQ" name="Window">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXGeIHAZEe2jupa-j754jQ"/>
+    <visualProperties xmi:id="_wEze8XAZEe2jupa-j754jQ" position="1157.0,256.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_wEze8nAZEe2jupa-j754jQ" label="+"/>
+    <operations xmi:id="_wEze83AZEe2jupa-j754jQ" name="Window">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXHFMHAZEe2jupa-j754jQ"/>
+      <keywords xmi:id="_wEze9HAZEe2jupa-j754jQ" keyword="create"/>
+      <visibility xmi:id="_wEze9XAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wEze9nAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_wEze93AZEe2jupa-j754jQ">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXHsQnAZEe2jupa-j754jQ"/>
+        <type xmi:id="_wEze-HAZEe2jupa-j754jQ" name="Window">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXGeIHAZEe2jupa-j754jQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_wEze-XAZEe2jupa-j754jQ" name="windowProperties">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXITUHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wEze-nAZEe2jupa-j754jQ" label="-"/>
+      <cardinality xmi:id="_wEze-3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_wFxvUHAZEe2jupa-j754jQ" name="Maze" associationsIn="_wCOFAHAZEe2jupa-j754jQ" associationsOut="_wCMP0HAZEe2jupa-j754jQ _wFjs4HAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXKIgHAZEe2jupa-j754jQ"/>
+    <visualProperties xmi:id="_wFxvUXAZEe2jupa-j754jQ" position="1213.0,1000.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_wFxvUnAZEe2jupa-j754jQ" label="+"/>
+    <attributes xmi:id="_wFxvU3AZEe2jupa-j754jQ" name="pan">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saRt8XAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wFxvVHAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wFxvVXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wFxvVnAZEe2jupa-j754jQ" name="GamePanel">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWs1gHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wFxvV3AZEe2jupa-j754jQ" name="tile">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saSVAXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wFxvWHAZEe2jupa-j754jQ" name="Array">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saS8EXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_wFxvWXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saTjIHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wFxvWnAZEe2jupa-j754jQ" label="~"/>
+      <cardinality xmi:id="_wFxvW3AZEe2jupa-j754jQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_wFxvXHAZEe2jupa-j754jQ" name="Tile">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXVHoHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_wFxvXXAZEe2jupa-j754jQ" name="maze" staticAttribute="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saTjIXAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wFxvXnAZEe2jupa-j754jQ" name="Array">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saUKMXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_wFxvX3AZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saUxQHAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wFxvYHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wFxvYXAZEe2jupa-j754jQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_wFxvYnAZEe2jupa-j754jQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_wFxvY3AZEe2jupa-j754jQ" name="loadMaze">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXMkwHAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wFxvZHAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wFxvZXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_wFxvZnAZEe2jupa-j754jQ" name="filePath">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXMkwXAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wFxvZ3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wFxvaHAZEe2jupa-j754jQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_wFyWYHAZEe2jupa-j754jQ" name="isWall" staticOperation="true">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXNy4HAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wFyWYXAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wFyWYnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_wFyWY3AZEe2jupa-j754jQ">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXPBAHAZEe2jupa-j754jQ"/>
+        <type xmi:id="_wFyWZHAZEe2jupa-j754jQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_wFyWZXAZEe2jupa-j754jQ" name="column">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXNy4XAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wFyWZnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wFyWZ3AZEe2jupa-j754jQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_wFyWaHAZEe2jupa-j754jQ" name="row">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXNy4nAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wFyWaXAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wFyWanAZEe2jupa-j754jQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_wFyWa3AZEe2jupa-j754jQ" name="direction">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXOZ8HAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wFyWbHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wFyWbXAZEe2jupa-j754jQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_wFyWbnAZEe2jupa-j754jQ" name="getTileImage">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXPBAXAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wFyWb3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wFyWcHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_wFyWcXAZEe2jupa-j754jQ" name="Maze">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZV50HAZEe2jupa-j754jQ"/>
+      <keywords xmi:id="_wFyWcnAZEe2jupa-j754jQ" keyword="create"/>
+      <visibility xmi:id="_wFyWc3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wFyWdHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_wFyWdXAZEe2jupa-j754jQ">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZWg4HAZEe2jupa-j754jQ"/>
+        <type xmi:id="_wFyWdnAZEe2jupa-j754jQ" name="Maze">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXKIgHAZEe2jupa-j754jQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_wFyWd3AZEe2jupa-j754jQ" name="pan">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZV50XAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wFyWeHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wFyWeXAZEe2jupa-j754jQ" name="GamePanel">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sWs1gHAZEe2jupa-j754jQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_wFyWenAZEe2jupa-j754jQ" name="draw">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZzM0HAZEe2jupa-j754jQ"/>
+      <visibility xmi:id="_wFyWe3AZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wFyWfHAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_wFyWfXAZEe2jupa-j754jQ" name="g2">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sZzM0XAZEe2jupa-j754jQ"/>
+        <cardinality xmi:id="_wFyWfnAZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+        <type xmi:id="_wFyWf3AZEe2jupa-j754jQ" name="Graphics2D">
+          <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY2KkHAZEe2jupa-j754jQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_wG-pNXAZEe2jupa-j754jQ" name="Tile" associationsIn="_wFjs4HAZEe2jupa-j754jQ" associationsOut="_wGXlMHAZEe2jupa-j754jQ">
+    <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sXVHoHAZEe2jupa-j754jQ"/>
+    <visualProperties xmi:id="_wG-pNnAZEe2jupa-j754jQ" position="1345.0,1318.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_wG-pN3AZEe2jupa-j754jQ" label="+"/>
+    <attributes xmi:id="_wG-pOHAZEe2jupa-j754jQ" name="image">
+      <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saVYUHAZEe2jupa-j754jQ"/>
+      <stereotypes xmi:id="_wG-pOXAZEe2jupa-j754jQ" name="LegacyStyledElement">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_saVYUXAZEe2jupa-j754jQ"/>
+      </stereotypes>
+      <visibility xmi:id="_wG-pOnAZEe2jupa-j754jQ" label="+"/>
+      <cardinality xmi:id="_wG-pO3AZEe2jupa-j754jQ" label="1" max="1" min="1"/>
+      <type xmi:id="_wG-pPHAZEe2jupa-j754jQ" name="BufferedImage">
+        <modelElement href="Sprint%202%20Diagramme%20de%20classe.uml#_sY3_wHAZEe2jupa-j754jQ"/>
+      </type>
+    </attributes>
+  </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
