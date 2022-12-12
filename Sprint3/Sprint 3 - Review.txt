@@ -10,5 +10,3 @@ Sprint 3 Review
 - Apparition des messages "Congrats" ou "Game Over" à la fin du jeu : PAS FAIT
 
 Backlog 3 partiellement respecté
-
-Traduit avec www.DeepL.com/Translator (version gratuite)
