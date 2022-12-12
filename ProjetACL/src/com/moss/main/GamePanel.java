@@ -31,6 +31,7 @@ public class GamePanel extends JPanel implements Runnable {
 	Thread gameThread;
 	public Collision collision=new Collision(this);
 	public AssetSetter setter=new AssetSetter(this);
+	public GameInterface GI =new GameInterface(this);
 	Maze maze = new Maze(this);
 	Hero hero = new Hero(this, keyboard); // new instance of the Hero Class
 	public AllObject obj[]=new AllObject[10];
@@ -66,6 +67,7 @@ public class GamePanel extends JPanel implements Runnable {
 			}
 		}
 		hero.draw(g2); // draw the hero on the GamePanel
+		GI.draw(g2);
 		g2.dispose();
 	}
 

@@ -17,7 +17,7 @@ import com.moss.object.TreasureOpen;
 public class Hero extends Character {
 	GamePanel pan;
 	Keyboard keyboard;
-	int hasKey=0;
+	public int hasKey=0;
 
 	public Hero(GamePanel pan, Keyboard keyboard) {
 		this.pan = pan;
@@ -161,6 +161,7 @@ public class Hero extends Character {
 				System.out.println("key: "+hasKey);
 				break;
 			case "Treasure open":
+				pan.GI.gameOver=true;
 				break;
 			}
 		}

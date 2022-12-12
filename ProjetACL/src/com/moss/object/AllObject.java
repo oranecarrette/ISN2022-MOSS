@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 import com.moss.main.GamePanel;
 
 public class AllObject {
-	BufferedImage image;
+	public BufferedImage image;
 	public String name;
 	public boolean collision=false;
 	public int x,y;
