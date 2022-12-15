@@ -16,7 +16,7 @@ public class Main {
 
 		// Window's creationd
 		Window window = new Window();
-
+		pan.setupGame();
 		// Start of the game's thread on the game panel
 		pan.startGameThread();
 

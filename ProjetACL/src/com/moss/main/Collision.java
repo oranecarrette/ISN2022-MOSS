@@ -55,6 +55,72 @@ public class Collision {
 			break;
 		}
 		
+		
+	}
+	
+	public int checkObject(Character character,boolean hero) {
+		int index=-1;
+		for(int i=0;i<pan.obj.length;i++) {
+			if(pan.obj[i]!=null) {
+				character.solidArea.x=character.x+character.solidArea.x;
+				character.solidArea.y=character.y+character.solidArea.y;
+				
+				pan.obj[i].solidArea.x=pan.obj[i].x+pan.obj[i].solidArea.x;
+				pan.obj[i].solidArea.y=pan.obj[i].y+pan.obj[i].solidArea.y;
+				
+				switch(character.direction) {
+				case "up":
+					character.solidArea.y-=character.speed;
+					if(character.solidArea.intersects(pan.obj[i].solidArea)) {
+						if(pan.obj[i].collision==true) {
+							character.collisionOn=true;
+						}
+						if(hero==true) {
+							index=i;
+						}
+					}
+					break;
+				case "down":
+					character.solidArea.y+=character.speed;
+					if(character.solidArea.intersects(pan.obj[i].solidArea)) {
+						if(pan.obj[i].collision==true) {
+							character.collisionOn=true;
+						}
+						if(hero==true) {
+							index=i;
+						}
+					}
+					break;
+				case "right":
+					character.solidArea.x+=character.speed;
+					if(character.solidArea.intersects(pan.obj[i].solidArea)) {
+						if(pan.obj[i].collision==true) {
+							character.collisionOn=true;
+						}
+						if(hero==true) {
+							index=i;
+						}
+					}
+					break;
+				case "left":
+					character.solidArea.x-=character.speed;
+					if(character.solidArea.intersects(pan.obj[i].solidArea)) {
+						if(pan.obj[i].collision==true) {
+							character.collisionOn=true;
+						}
+						if(hero==true) {
+							index=i;
+						}
+					}
+					break;
+				}
+				character.solidArea.x=character.solidAreaDefaultX;
+				character.solidArea.y=character.solidAreaDefaultY;
+				pan.obj[i].solidArea.x=pan.obj[i].solidAreaDefaultX;
+				pan.obj[i].solidArea.y=pan.obj[i].solidAreaDefaultY;
+			}
+		}
+		return index;
 	}
 	
 }

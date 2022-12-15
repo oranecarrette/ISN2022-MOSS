@@ -12,10 +12,12 @@ import com.moss.main.GamePanel;
 import com.moss.main.Keyboard;
 import com.moss.main.Main;
 import com.moss.maze.Maze;
+import com.moss.object.TreasureOpen;
 
 public class Hero extends Character {
 	GamePanel pan;
 	Keyboard keyboard;
+	public int hasKey=0;
 
 	public Hero(GamePanel pan, Keyboard keyboard) {
 		this.pan = pan;
@@ -24,9 +26,12 @@ public class Hero extends Character {
 		// default values
 		x = 48; // x position
 		y = 40; // y position
+		solidArea = new Rectangle(8, 16, 32, 32);
+		solidAreaDefaultX=solidArea.x;
+		solidAreaDefaultY=solidArea.y;
 		speed = 2; // move with a step of 2
 		direction = "down"; // picture's direction
-		solidArea = new Rectangle(8, 16, 32, 32);
+		
 
 		getPlayerImage();
 	}
@@ -105,6 +110,9 @@ public class Hero extends Character {
 			}
 			collisionOn = false;
 			pan.collision.checkTile(this);
+			int objectIndex= pan.collision.checkObject(this, true);
+			pickUpObject(objectIndex);
+			
 			if (collisionOn == false) {
 				switch (direction) {
 				case "up":
@@ -132,6 +140,31 @@ public class Hero extends Character {
 			}
 		}
 
+	}
+	
+	public void pickUpObject(int i) {
+		if(i!=-1) {
+			String objectName=pan.obj[i].name;
+			switch(objectName) {
+			case "Key":
+				hasKey++;
+				pan.obj[i]=null;
+				System.out.println("key: "+hasKey);
+				break;
+			case "Treasure close":
+				if(hasKey>0) {
+					pan.obj[i]=new TreasureOpen();
+					pan.obj[i].x=13*pan.tileSize;
+					 pan.obj[i].y=10*pan.tileSize;
+					hasKey--;
+				}
+				System.out.println("key: "+hasKey);
+				break;
+			case "Treasure open":
+				pan.GI.gameOver=true;
+				break;
+			}
+		}
 	}
 
 	public void draw(Graphics2D g2) {

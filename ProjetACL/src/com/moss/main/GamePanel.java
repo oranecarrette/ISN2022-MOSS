@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 
 import com.moss.character.Hero;
 import com.moss.maze.Maze;
+import com.moss.object.AllObject;
 
 public class GamePanel extends JPanel implements Runnable {
 
@@ -29,8 +30,11 @@ public class GamePanel extends JPanel implements Runnable {
 	Keyboard keyboard = new Keyboard(); // new instance of the Keyboard Class
 	Thread gameThread;
 	public Collision collision=new Collision(this);
+	public AssetSetter setter=new AssetSetter(this);
+	public GameInterface GI =new GameInterface(this);
 	Maze maze = new Maze(this);
 	Hero hero = new Hero(this, keyboard); // new instance of the Hero Class
+	public AllObject obj[]=new AllObject[10];
 
 	public GamePanel() { // GamePanel's constructor
 		this.setPreferredSize(new Dimension(screenWidth, screenHeight)); // panel's dimensions
@@ -38,6 +42,10 @@ public class GamePanel extends JPanel implements Runnable {
 		this.setDoubleBuffered(true); // optimisation of the window's rendering
 		this.addKeyListener(keyboard);
 		this.setFocusable(true);
+	}
+	
+	public void setupGame() {
+		setter.setObject();
 	}
 
 	public void startGameThread() {
@@ -53,7 +61,13 @@ public class GamePanel extends JPanel implements Runnable {
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g; // transtypage to a class of better performances
 		maze.draw(g2);
+		for(int i=0;i<obj.length;i++) {
+			if(obj[i]!=null) {
+				obj[i].draw(g2, this);
+			}
+		}
 		hero.draw(g2); // draw the hero on the GamePanel
+		GI.draw(g2);
 		g2.dispose();
 	}
 
