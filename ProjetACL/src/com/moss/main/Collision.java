@@ -1,13 +1,16 @@
 package com.moss.main;
 import com.moss.character.Character;
+import com.moss.character.Monster;
 
 public class Collision {
 	GamePanel pan;
+	Monster monster;
+	
 	public Collision(GamePanel pan){
 		this.pan=pan;
 	}
 	
-	public void checkTile(Character character) {
+	public void checkTile(Character character,Monster monster) {
 		int characterx1=character.x+character.solidArea.x;
 		int characterx2=characterx1+character.solidArea.width;
 		int charactery1=character.y+character.solidArea.y;
@@ -19,43 +22,66 @@ public class Collision {
 		int bottomRow=charactery2/pan.tileSize;
 		
 		int tile1,tile2;
+		int xm,ym;
+		
+		int[] monsterPosition = monster.getMonsterPosition();
+		xm = monsterPosition[0]/pan.tileSize;
+		ym = monsterPosition[1]/pan.tileSize;
 		
 		switch(character.direction) {
 		case"up":
 			topRow=(charactery1-character.speed)/pan.tileSize;
 			tile1=pan.maze.maze[topRow][leftCol];
 			tile2=pan.maze.maze[topRow][rightCol];
-			if(pan.maze.tile[tile1].impassable==true ||pan.maze.tile[tile2].impassable==true ) {
+			if(pan.maze.tile[tile1].impassable==true ||pan.maze.tile[tile2].impassable==true) {
 				character.collisionOn=true;
+			} else if(pan.maze.maze[topRow][leftCol]==2 ||pan.maze.maze[topRow][rightCol]==2 ) {
+				character.holeOn=true;
+			} else if((leftCol == xm)&&(topRow == ym) ||(rightCol == xm)&&(topRow == ym) ) {
+				character.collisionOn=true;
+				character.monsterOn=true;
 			}
 			break;
 		case"down":
 			bottomRow=(charactery2+character.speed)/pan.tileSize;
 			tile1=pan.maze.maze[bottomRow][leftCol];
 			tile2=pan.maze.maze[bottomRow][rightCol];
-			if(pan.maze.tile[tile1].impassable==true ||pan.maze.tile[tile2].impassable==true ) {
+			if(pan.maze.tile[tile1].impassable==true ||pan.maze.tile[tile2].impassable==true) {
 				character.collisionOn=true;
+			} else if(pan.maze.maze[bottomRow][leftCol]==2 ||pan.maze.maze[bottomRow][rightCol]==2 ) {
+				character.holeOn=true;
+			} else if((leftCol == xm)&&(bottomRow == ym) ||(rightCol == xm)&&(bottomRow == ym) ) {
+				character.collisionOn=true;
+				character.monsterOn=true;
 			}
 			break;
 		case"right":
 			rightCol=(characterx2+character.speed)/pan.tileSize;
 			tile1=pan.maze.maze[topRow][rightCol];
 			tile2=pan.maze.maze[bottomRow][rightCol];
-			if(pan.maze.tile[tile1].impassable==true ||pan.maze.tile[tile2].impassable==true ) {
+			if(pan.maze.tile[tile1].impassable==true ||pan.maze.tile[tile2].impassable==true) {
 				character.collisionOn=true;
+			} else if(pan.maze.maze[topRow][rightCol]==2 ||pan.maze.maze[bottomRow][rightCol]==2 ) {
+				character.holeOn=true;
+			} else if((rightCol == xm)&&(topRow == ym) ||(rightCol == xm)&&(bottomRow == ym) ) {
+				character.collisionOn=true;
+				character.monsterOn=true;
 			}
 			break;
 		case"left":
 			leftCol=(characterx1-character.speed)/pan.tileSize;
 			tile1=pan.maze.maze[topRow][leftCol];
 			tile2=pan.maze.maze[bottomRow][leftCol];
-			if(pan.maze.tile[tile1].impassable==true ||pan.maze.tile[tile2].impassable==true ) {
+			if(pan.maze.tile[tile1].impassable==true ||pan.maze.tile[tile2].impassable==true) {
 				character.collisionOn=true;
-			}
+			} else if(pan.maze.maze[topRow][leftCol]==2 ||pan.maze.maze[bottomRow][leftCol]==2 ) {
+				character.holeOn=true;
+			} else if((leftCol == xm)&&(topRow == ym) ||(leftCol == xm)&&(bottomRow == ym) ) {
+				character.collisionOn=true;
+				character.monsterOn=true;
+			}			
 			break;
 		}
-		
-		
 	}
 	
 	public int checkObject(Character character,boolean hero) {

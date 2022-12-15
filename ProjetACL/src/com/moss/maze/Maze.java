@@ -6,8 +6,6 @@ import com.moss.main.Main;
 import java.awt.Graphics2D;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.FileReader;
 import java.io.File;
 import javax.imageio.ImageIO;
@@ -41,7 +39,7 @@ public class Maze {
 			tile[1] = new Tile();
 			tile[1].image = ImageIO.read(file);
 
-			path = Main.currentDir + "/images/Tiles/water.png";
+			path = Main.currentDir + "/images/Tiles/hole.png";
 			file = new File(path);
 			tile[2] = new Tile();
 			tile[2].image = ImageIO.read(file);
@@ -52,7 +50,6 @@ public class Maze {
 	
 	public void getCollisionInformation() {
 		tile[1].impassable=true;
-		tile[2].impassable=true;
 	}
 
 	public void loadMaze(String mapPath) {

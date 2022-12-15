@@ -8,8 +8,10 @@ import java.awt.Graphics2D;
 import javax.swing.JPanel;
 
 import com.moss.character.Hero;
+import com.moss.character.Monster;
 import com.moss.maze.Maze;
 import com.moss.object.AllObject;
+import com.moss.object.Life;
 
 public class GamePanel extends JPanel implements Runnable {
 
@@ -24,16 +26,17 @@ public class GamePanel extends JPanel implements Runnable {
 	final int screenWidth = tileSize * maxScreenCol; // 768 pixels
 	final int screenHeight = tileSize * maxScreenRow; // 576 pixels
 
-	// FPS
 	int FPS = 60;
 
 	Keyboard keyboard = new Keyboard(); // new instance of the Keyboard Class
 	Thread gameThread;
-	public Collision collision=new Collision(this);
-	public AssetSetter setter=new AssetSetter(this);
-	public GameInterface GI =new GameInterface(this);
+	public Collision collision = new Collision(this);
+	public AssetSetter setter = new AssetSetter(this);
+	public GameInterface GI = new GameInterface(this);
 	Maze maze = new Maze(this);
-	Hero hero = new Hero(this, keyboard); // new instance of the Hero Class
+	public Hero hero = new Hero(this, keyboard); // new instance of the Hero Class
+	public Monster monster = new Monster(this,maze);
+	Life life = new Life(this);
 	public AllObject obj[]=new AllObject[10];
 
 	public GamePanel() { // GamePanel's constructor
@@ -55,6 +58,7 @@ public class GamePanel extends JPanel implements Runnable {
 
 	public void update() {
 		hero.update(); // hero's positions update
+		life.update();
 	}
 
 	public void paintComponent(Graphics g) { // draw on the GamePanel
@@ -67,6 +71,8 @@ public class GamePanel extends JPanel implements Runnable {
 			}
 		}
 		hero.draw(g2); // draw the hero on the GamePanel
+		monster.draw(g2);
+		life.draw(g2);
 		GI.draw(g2);
 		g2.dispose();
 	}
