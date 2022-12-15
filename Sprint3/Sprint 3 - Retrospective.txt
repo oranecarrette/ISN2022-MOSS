@@ -1,9 +1,12 @@
 Sprint 3 - Retrospective
 
 CE QUI A BIEN MARCHE :
-- Les bogues du code ont été corrigés et de nouvelles fonctionnalités ont été ajoutées.
+- Les bugs du code ont été corrigés et de nouvelles fonctionnalités ont été ajoutées.
 
 CE QUI N'A PAS BIEN MARCHE :
 - Il n'a pas été possible d'ajouter toutes les fonctionnalités prévues dans Backlog 2
 - La quantité de tâches à accomplir n'était pas compatible avec le temps disponible
+- Le code n'est pas assez commenté, ce qui est parfois préjudiciable lorsque quelqu'un reprend le travail derrière un autre membre du groupe
+/!\ Nous avions déjà noté d'ajuster la quantité de tâches à réaliser au temps disponible dans la retrospective du sprint 2. Nous en avons tenons compte, cependant sur la période du sprint 3, nous avons beaucoup de travail que nous n'avions pas pu prévoir
 -> Il est nécessaire de mieux sélectionner les tâches à accomplir et d'essayer de mieux prévoir le temps nécessaire à la mise en œuvre de chacune d'entre elles afin que ce qui a été planifié soit livré à temps
+-> Il faut reprendre tout le code et le commenter, et poursuivre cette tâche lors de l'implémentation de nouvelles classes, méthodes, etc

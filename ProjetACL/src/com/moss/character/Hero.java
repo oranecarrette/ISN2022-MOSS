@@ -31,6 +31,8 @@ public class Hero extends Character {
 		solidAreaDefaultY=solidArea.y;
 		speed = 2; // move with a step of 2
 		direction = "down"; // picture's direction
+		initialLives = 3;
+		currentLives = initialLives;
 		
 
 		getPlayerImage();
@@ -108,9 +110,13 @@ public class Hero extends Character {
 			if (keyboard.rightPressed) {
 				direction = "right";
 			}
+			
 			collisionOn = false;
-			pan.collision.checkTile(this);
-			int objectIndex= pan.collision.checkObject(this, true);
+			holeOn = false;
+			monsterOn = false;
+			
+			pan.collision.checkTile(this, pan.monster);
+			int objectIndex = pan.collision.checkObject(this, true);
 			pickUpObject(objectIndex);
 			
 			if (collisionOn == false) {
@@ -128,6 +134,35 @@ public class Hero extends Character {
 					x += speed;
 					break;
 				}
+			}
+			
+			
+			if (holeOn == true) {
+				currentLives = currentLives - 3;
+				pan.GI.gameOver = true;
+			}
+			
+			if (monsterOn == true) {
+				currentLives = currentLives - 1;
+				switch (direction) {
+				case "up":
+					y += 10*speed;
+					break;
+				case "down":
+					y -= 10*speed;
+					break;
+				case "left":
+					x += 10*speed;
+					break;
+				case "right":
+					x -= 10*speed;
+					break;
+				}
+				System.out.println("vies "+currentLives);
+			}
+			
+			if (currentLives == 0) {
+				pan.GI.gameOver = true;
 			}
 
 			spriteCounter++;
@@ -155,13 +190,13 @@ public class Hero extends Character {
 				if(hasKey>0) {
 					pan.obj[i]=new TreasureOpen();
 					pan.obj[i].x=13*pan.tileSize;
-					 pan.obj[i].y=10*pan.tileSize;
+					pan.obj[i].y=10*pan.tileSize;
 					hasKey--;
 				}
 				System.out.println("key: "+hasKey);
 				break;
 			case "Treasure open":
-				pan.GI.gameOver=true;
+				pan.GI.gameWon=true;
 				break;
 			}
 		}

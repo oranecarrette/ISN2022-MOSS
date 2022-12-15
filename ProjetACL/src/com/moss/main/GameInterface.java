@@ -13,6 +13,7 @@ public class GameInterface {
 	GamePanel pan;
 	Font arial_20,arial_40, arial_80;
 	BufferedImage keyImage;
+	public boolean gameWon=false;
 	public boolean gameOver=false;
 	double Time=0;
 	DecimalFormat dFormat=new DecimalFormat("#0.00");
@@ -27,7 +28,7 @@ public class GameInterface {
 	}
 	
 	public void draw(Graphics2D g2) {
-		if (gameOver==true) {
+		if (gameWon==true) {
 			String text;
 			int textLength;
 			int x;
@@ -35,7 +36,7 @@ public class GameInterface {
 			
 			g2.setFont(arial_40);
 			g2.setColor(Color.white);
-			text="You Opened the treasure!";
+			text="You opened the treasure!";
 			textLength =(int)g2.getFontMetrics().getStringBounds(text, g2).getWidth();
 			x=pan.screenWidth/2-textLength/2;
 			y=pan.screenHeight/2;
@@ -60,6 +61,39 @@ public class GameInterface {
 			
 			pan.gameThread=null;
 			
+		}
+		else if (gameOver==true){
+			String text;
+			int textLength;
+			int x;
+			int y;
+			
+			g2.setFont(arial_40);
+			g2.setColor(Color.white);
+			text="You lost your 3 lives!";
+			textLength =(int)g2.getFontMetrics().getStringBounds(text, g2).getWidth();
+			x=pan.screenWidth/2-textLength/2;
+			y=pan.screenHeight/2;
+			g2.drawString(text, x, y);
+			
+			g2.setFont(arial_40);
+			g2.setColor(Color.yellow);
+			text="Time is: "+dFormat.format(Time)+'!';
+			textLength =(int)g2.getFontMetrics().getStringBounds(text, g2).getWidth();
+			x=pan.screenWidth/2-textLength/2;
+			y=pan.screenHeight/2+3*pan.tileSize;
+			g2.drawString(text, x, y);
+			
+			
+			g2.setFont(arial_80);
+			g2.setColor(Color.RED);
+			text="Game Over!";
+			textLength =(int)g2.getFontMetrics().getStringBounds(text, g2).getWidth();
+			x=pan.screenWidth/2-textLength/2;
+			y=pan.screenHeight/2+2*pan.tileSize;
+			g2.drawString(text, x, y);
+			
+			pan.gameThread=null;	
 		}
 		else {
 			g2.setFont(arial_20);

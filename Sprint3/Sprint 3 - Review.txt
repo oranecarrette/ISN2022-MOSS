@@ -1,12 +1,19 @@
-Sprint 3 Review
+Sprint 3 - Review
 
-- Examiner et corriger les bogues et les problèmes dans le code : FAIT
-- Modifier la gestion des collisions : FAIT
-- Mise en œuvre des 3 vies initiales du héros : FAIT
-- Apparition du monstre au début du jeu : FAIT
+- Le héros gagne en arrivant sur le trésor : FAIT
+- Le héros perd s'il tombe dans un trou : FAIT
+- Le héros a 3 vies : FAIT
+- Un monstre apparaît à chaque début de partie, le héros perd 1 vie s'il le rencontre : PARTIELLEMENT FAIT 
 
-- Mise en œuvre du trou et du trésor : PAS FAIT
-- Le monstre attaque le héros : PAS FAIT
-- Apparition des messages "Congrats" ou "Game Over" à la fin du jeu : PAS FAIT
+
+REPARTITION DES TACHES
+1) Le héros gagne le jeu en arrivant sur le trésor : FAIT
+2) Le héros a 3 vies : FAIT
+- Il perd 1 vie en rencontrant un monstre : FAIT
+- Il perd 3 vies en tombant dans un trou : FAIT
+3) Le héros perd le jeu en perdant ses 3 vies : FAIT
+4) Il y a des monstres dans le labyrinthe : FAIT
+- Un monstre apparaît à une position aléatoire admissible quand le jeu est lancé : FAIT
+- Un monstre attaque le héros s'il est dans son entourage : PAS FAIT
 
 Backlog 3 partiellement respecté
