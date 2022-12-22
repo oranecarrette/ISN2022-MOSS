@@ -10,19 +10,39 @@ import java.io.FileReader;
 import java.io.File;
 import javax.imageio.ImageIO;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Maze {
 
 	GamePanel pan;
 	public Tile[] tile; // types of tile stored in a table
 	public int maze[][];
-
+	
+	// creation of an ArrayList which contains the paths of the different mazes
+	public ArrayList<String> adressesMazes = new ArrayList<String>(Arrays.asList("maze1","maze2","maze3"));
+	public String adresseChoisie = new String();
+	
 	public Maze(GamePanel pan) {
 		this.pan = pan;
 		tile = new Tile[5]; // 5 types of tile for now
 		maze = new int[pan.maxScreenRow][pan.maxScreenCol]; // the maze!!! finally
 		getTileImage();
 		getCollisionInformation();
-		loadMaze(Main.currentDir + "/src/mazes/maze1.txt");
+		// Random choice of a maze to load
+		adresseChoisie = getRandomMaze();
+		loadMaze(Main.currentDir + "/src/mazes/" + adresseChoisie + ".txt");
+	}
+	
+	// method which selects one maze randomly
+	public String getRandomMaze() {
+		// Collections.shuffle shuffles the elements of adressesMazes
+		Collections.shuffle(adressesMazes);
+		Collections.shuffle(adressesMazes);
+		// Since the elements of adressesMazes are no longer in their initial order,
+		// getting the first element of it permits to choose one maze randomly
+		return adressesMazes.get(0);
 	}
 
 	public void getTileImage() {
@@ -85,8 +105,6 @@ public class Maze {
 		}
 
 	}
-
-	
 
 	public void draw(Graphics2D g2) {
 		int col = 0;
