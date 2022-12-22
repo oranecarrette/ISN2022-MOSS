@@ -1,6 +1,19 @@
 FONCTIONNALITES
-A définir
-
+- Le héros peut récupérer une vie en ramassant une potion 
+- Le monstre se déplace dans le labyrinthe 
+- Le monstre a une animation de déplacement 
+- Le monstre devient rouge quand il attaque
+- Il y a une musique 
+- Le labyrinthe est choisi aléatoirement entre plusieurs modèles au début du jeu
 
 REPARTITION DES TACHES
-A définir
+1) Potion de vie : Sabri
+2) Déplacement aléatoire du monstre : Suzy 
+3) Animation du monstre (sur place et attaque) : Suzy
+4) Affichage des vies vides : Michelle
+5) Musique de fond : Michelle
+6) Création de différents labyrinthes : Orane
+7) Sélection aléatoire du labyrinthe au début du jeu : Orane
+8) Amélioration de la détection des trous : Sabri
+9) Amélioration de la déclaration des objets : Orane
+10) Commentaires du code & amélioration de sa lisibilité : tous
