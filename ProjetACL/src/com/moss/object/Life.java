@@ -41,8 +41,11 @@ public class Life extends AllObject {
 	}
 	
 	public void draw(Graphics2D g2) {
-		for (int hearts = 0; hearts < pan.hero.currentLives ; hearts++) {
-			g2.drawImage(heartfull, hearts*48, 0, pan.tileSize, pan.tileSize, null);
+		for (int blankhearts = pan.hero.initialLives; blankhearts > pan.hero.currentLives ; blankhearts--) {
+			g2.drawImage(heartblank, (blankhearts-1)*48, 0, pan.tileSize, pan.tileSize, null);
+		}
+		for (int fullhearts = 0; fullhearts < pan.hero.currentLives ; fullhearts++) {
+			g2.drawImage(heartfull, fullhearts*48, 0, pan.tileSize, pan.tileSize, null);
 		}
 	}
 	

@@ -29,14 +29,14 @@ public class GamePanel extends JPanel implements Runnable {
 	int FPS = 60;
 
 	Keyboard keyboard = new Keyboard(); // new instance of the Keyboard Class
-	Thread gameThread;
+	public Thread gameThread;
 	public Collision collision = new Collision(this);
 	public AssetSetter setter = new AssetSetter(this);
 	public GameInterface GI = new GameInterface(this);
-	Maze maze = new Maze(this);
+	public Maze maze = new Maze(this);
 	public Hero hero = new Hero(this, keyboard); // new instance of the Hero Class
 	public Monster monster = new Monster(this,maze);
-	Life life = new Life(this);
+	public Life life = new Life(this);
 	public AllObject obj[]=new AllObject[10];
 
 	public GamePanel() { // GamePanel's constructor
@@ -58,6 +58,7 @@ public class GamePanel extends JPanel implements Runnable {
 
 	public void update() {
 		hero.update(); // hero's positions update
+		monster.update();
 		life.update();
 	}
 
