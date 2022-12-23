@@ -1,8 +1,6 @@
 package com.moss.main;
 
-import com.moss.maze.*;
-
-import javax.swing.JFrame;
+// USEFUL IMPORTS
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -14,8 +12,9 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// Window's creationd
+		// Creation of the window
 		Window window = new Window();
+		// Set up of the game
 		pan.setupGame();
 		// Start of the game's thread on the game panel
 		pan.startGameThread();
