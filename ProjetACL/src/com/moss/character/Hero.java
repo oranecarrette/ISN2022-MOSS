@@ -115,7 +115,8 @@ public class Hero extends Character {
 			holeOn = false;
 			monsterOn = false;
 			
-			pan.collision.checkTile(this, pan.monster);
+			pan.collision.checkTile(this);
+			pan.collision.checkMonster(this);
 			int objectIndex = pan.collision.checkObject(this, true);
 			pickUpObject(objectIndex);
 			

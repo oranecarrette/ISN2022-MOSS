@@ -11,6 +11,7 @@ public class Character {
 	public String direction;
 	public int spriteCounter=0;
 	public int spriteNum=1;
+	public int directionCounter=0;
 	public boolean attack = false;
 	
 	public Rectangle solidArea;
