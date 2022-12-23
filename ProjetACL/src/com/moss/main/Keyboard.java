@@ -1,19 +1,26 @@
 package com.moss.main;
 
+// USEFUL IMPORTS 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+//the class Keyboard creates a link between what the player enters with the keyboard and the movement of the hero
+
 public class Keyboard implements KeyListener {
 
+	// MEMBER VARIABLES
 	public boolean upPressed, downPressed, leftPressed, rightPressed;
 
+	// METHODS 
 	@Override
-	public void keyTyped(KeyEvent e) { // when you press an alphanumeric key
-
+	/* Method called when an alphanumeric key is pressed, left blanked because not useful in this game */
+	public void keyTyped(KeyEvent e) { // 
+		
 	}
 
 	@Override
-	public void keyPressed(KeyEvent e) { // when you press any kind of key
+	/* Method called when any kind of key is pressed */
+	public void keyPressed(KeyEvent e) {
 		int code = e.getKeyCode(); // retrieve the key pressed
 		if (code == KeyEvent.VK_Z) { // if you press the Z key
 			upPressed = true; // the character goes up
@@ -30,7 +37,8 @@ public class Keyboard implements KeyListener {
 	}
 
 	@Override
-	public void keyReleased(KeyEvent e) { // when you release any kind of key
+	/* Method called when any kind of key is released */
+	public void keyReleased(KeyEvent e) {
 		int code = e.getKeyCode(); // retrieve the key released
 		if (code == KeyEvent.VK_Z) { // if you release the Z key
 			upPressed = false; // the character stops
@@ -44,7 +52,6 @@ public class Keyboard implements KeyListener {
 		if (code == KeyEvent.VK_D) { // if you release the D key
 			rightPressed = false; // the character stops
 		}
-
 	}
 
 }
