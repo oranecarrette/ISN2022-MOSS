@@ -20,6 +20,10 @@ public class Maze {
 	public Tile[] tile; // types of tile stored in a table
 	public int maze[][];
 	
+	// creation of an ArrayList which contains indexes
+	public ArrayList<Integer> mazeIndex = new ArrayList<Integer>(Arrays.asList(0,1,2));
+	public static int mazeNumero;
+	
 	// creation of an ArrayList which contains the paths of the different mazes
 	public ArrayList<String> adressesMazes = new ArrayList<String>(Arrays.asList("maze1","maze2","maze3"));
 	public String adresseChoisie = new String();
@@ -31,19 +35,23 @@ public class Maze {
 		getTileImage();
 		getCollisionInformation();
 		// Random choice of a maze to load
-		adresseChoisie = getRandomMaze();
-		System.out.println("maze "+adresseChoisie);
+		mazeNumero = getRandomMaze();
+		adresseChoisie = adressesMazes.get(mazeNumero);
 		loadMaze(Main.currentDir + "/src/mazes/" + adresseChoisie + ".txt");
 	}
 	
 	// method which selects one maze randomly
-	public String getRandomMaze() {
+	public int getRandomMaze() {
 		// Collections.shuffle shuffles the elements of adressesMazes
-		Collections.shuffle(adressesMazes);
-		Collections.shuffle(adressesMazes);
+		Collections.shuffle(mazeIndex);
+		Collections.shuffle(mazeIndex);
 		// Since the elements of adressesMazes are no longer in their initial order,
 		// getting the first element of it permits to choose one maze randomly
-		return adressesMazes.get(0);
+		return mazeIndex.get(0);
+	}
+	
+	public static int getNumero() {
+	       return mazeNumero;
 	}
 
 	public void getTileImage() {

@@ -10,8 +10,7 @@ import javax.swing.JPanel;
 import com.moss.character.Hero;
 import com.moss.character.Monster;
 import com.moss.maze.Maze;
-import com.moss.object.AllObject;
-import com.moss.object.Life;
+import com.moss.object.*;
 
 public class GamePanel extends JPanel implements Runnable {
 
@@ -31,13 +30,18 @@ public class GamePanel extends JPanel implements Runnable {
 	Keyboard keyboard = new Keyboard(); // new instance of the Keyboard Class
 	public Thread gameThread;
 	public Collision collision = new Collision(this);
-	public AssetSetter setter = new AssetSetter(this);
+	//public AssetSetter setter = new AssetSetter(this);
 	public GameInterface GI = new GameInterface(this);
+	
 	public Maze maze = new Maze(this);
+	
 	public Hero hero = new Hero(this, keyboard); // new instance of the Hero Class
 	public Monster monster = new Monster(this);
 	public Life life = new Life(this);
-	public AllObject obj[]=new AllObject[10];
+	
+	public Objects obj[]=new Objects[10];
+	public Key key = new Key(this);
+	public TreasureClose treasureC = new TreasureClose(this);
 
 	public GamePanel() { // GamePanel's constructor
 		this.setPreferredSize(new Dimension(screenWidth, screenHeight)); // panel's dimensions
@@ -48,7 +52,8 @@ public class GamePanel extends JPanel implements Runnable {
 	}
 	
 	public void setupGame() {
-		setter.setObject();
+		key.setKey();
+		treasureC.setTreasure();
 	}
 
 	public void startGameThread() {

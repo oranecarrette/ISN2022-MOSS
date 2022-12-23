@@ -11,7 +11,7 @@ import com.moss.character.Hero;
 import com.moss.main.GamePanel;
 import com.moss.main.Main;
 
-public class Life extends AllObject {
+public class Life extends Objects {
 	GamePanel pan;
 	
 	public BufferedImage heartfull,heartblank;

@@ -187,7 +187,7 @@ public class Hero extends Character {
 				break;
 			case "Treasure close":
 				if(hasKey>0) {
-					pan.obj[i]=new TreasureOpen();
+					pan.obj[i]=new TreasureOpen(pan);
 					pan.obj[i].x=13*pan.tileSize;
 					pan.obj[i].y=10*pan.tileSize;
 					hasKey--;

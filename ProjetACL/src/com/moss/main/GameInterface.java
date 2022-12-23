@@ -23,7 +23,7 @@ public class GameInterface {
 		arial_20=new Font("Arial",Font.PLAIN,20);
 		arial_40=new Font("Arial",Font.PLAIN,40);
 		arial_80=new Font("Arial",Font.BOLD,80);
-		Key key=new Key();
+		Key key=new Key(pan);
 		keyImage=key.image;
 	}
 	
