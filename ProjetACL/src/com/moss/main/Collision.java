@@ -3,6 +3,7 @@ import com.moss.character.Character;
 import com.moss.character.Monster;
 
 public class Collision {
+	
 	GamePanel pan;
 	Monster monster;
 	
