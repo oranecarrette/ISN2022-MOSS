@@ -35,7 +35,7 @@ public class GamePanel extends JPanel implements Runnable {
 	public GameInterface GI = new GameInterface(this);
 	public Maze maze = new Maze(this);
 	public Hero hero = new Hero(this, keyboard); // new instance of the Hero Class
-	public Monster monster = new Monster(this,maze);
+	public Monster monster = new Monster(this);
 	public Life life = new Life(this);
 	public AllObject obj[]=new AllObject[10];
 

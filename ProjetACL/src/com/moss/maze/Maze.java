@@ -32,6 +32,7 @@ public class Maze {
 		getCollisionInformation();
 		// Random choice of a maze to load
 		adresseChoisie = getRandomMaze();
+		System.out.println("maze "+adresseChoisie);
 		loadMaze(Main.currentDir + "/src/mazes/" + adresseChoisie + ".txt");
 	}
 	

@@ -10,7 +10,7 @@ public class Collision {
 		this.pan=pan;
 	}
 	
-	public void checkTile(Character character,Monster monster) {
+	public void checkTile(Character character) {
 		int characterx1=character.x+character.solidArea.x;
 		int characterx2=characterx1+character.solidArea.width;
 		int charactery1=character.y+character.solidArea.y;
@@ -22,11 +22,6 @@ public class Collision {
 		int bottomRow=charactery2/pan.tileSize;
 		
 		int tile1,tile2;
-		int xm,ym;
-		
-		int[] monsterPosition = monster.getMonsterPosition();
-		xm = monsterPosition[0]/pan.tileSize;
-		ym = monsterPosition[1]/pan.tileSize;
 		
 		switch(character.direction) {
 		case"up":
@@ -37,9 +32,6 @@ public class Collision {
 				character.collisionOn=true;
 			} else if(pan.maze.maze[topRow][leftCol]==2 ||pan.maze.maze[topRow][rightCol]==2 ) {
 				character.holeOn=true;
-			} else if((leftCol == xm)&&(topRow == ym) ||(rightCol == xm)&&(topRow == ym) ) {
-				character.collisionOn=true;
-				character.monsterOn=true;
 			}
 			break;
 		case"down":
@@ -50,9 +42,6 @@ public class Collision {
 				character.collisionOn=true;
 			} else if(pan.maze.maze[bottomRow][leftCol]==2 ||pan.maze.maze[bottomRow][rightCol]==2 ) {
 				character.holeOn=true;
-			} else if((leftCol == xm)&&(bottomRow == ym) ||(rightCol == xm)&&(bottomRow == ym) ) {
-				character.collisionOn=true;
-				character.monsterOn=true;
 			}
 			break;
 		case"right":
@@ -63,9 +52,6 @@ public class Collision {
 				character.collisionOn=true;
 			} else if(pan.maze.maze[topRow][rightCol]==2 ||pan.maze.maze[bottomRow][rightCol]==2 ) {
 				character.holeOn=true;
-			} else if((rightCol == xm)&&(topRow == ym) ||(rightCol == xm)&&(bottomRow == ym) ) {
-				character.collisionOn=true;
-				character.monsterOn=true;
 			}
 			break;
 		case"left":
@@ -76,12 +62,52 @@ public class Collision {
 				character.collisionOn=true;
 			} else if(pan.maze.maze[topRow][leftCol]==2 ||pan.maze.maze[bottomRow][leftCol]==2 ) {
 				character.holeOn=true;
-			} else if((leftCol == xm)&&(topRow == ym) ||(leftCol == xm)&&(bottomRow == ym) ) {
-				character.collisionOn=true;
-				character.monsterOn=true;
 			}			
 			break;
 		}
+	}
+	
+	public void checkMonster(Character character) {
+		character.solidArea.x=character.x+character.solidArea.x;
+		character.solidArea.y=character.y+character.solidArea.y;
+		
+		pan.monster.solidArea.x=pan.monster.x+pan.monster.solidArea.x;
+		pan.monster.solidArea.y=pan.monster.y+pan.monster.solidArea.y;
+		
+		switch(character.direction) {
+		case "up":
+			character.solidArea.y-=character.speed;
+			if(character.solidArea.intersects(pan.monster.solidArea)) {
+				character.collisionOn = true;
+				character.monsterOn = true;
+			}
+			break;
+		case "down":
+			character.solidArea.y+=character.speed;
+			if(character.solidArea.intersects(pan.monster.solidArea)) {
+				character.collisionOn = true;
+				character.monsterOn = true;
+			}
+			break;
+		case "right":
+			character.solidArea.x+=character.speed;
+			if(character.solidArea.intersects(pan.monster.solidArea)) {
+				character.collisionOn = true;
+				character.monsterOn = true;
+			}
+			break;
+		case "left":
+			character.solidArea.x-=character.speed;
+			if(character.solidArea.intersects(pan.monster.solidArea)) {
+				character.collisionOn = true;
+				character.monsterOn = true;
+			}
+			break;
+		}
+		character.solidArea.x=character.solidAreaDefaultX;
+		character.solidArea.y=character.solidAreaDefaultY;
+		pan.monster.solidArea.x=pan.monster.solidAreaDefaultX;
+		pan.monster.solidArea.y=pan.monster.solidAreaDefaultY;
 	}
 	
 	public int checkObject(Character character,boolean hero) {

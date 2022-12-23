@@ -5,33 +5,32 @@ import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
 
 import com.moss.main.GamePanel;
 import com.moss.main.Main;
-import com.moss.maze.Maze;
 
 public class Monster extends Character {
 	GamePanel pan;
-	Maze theMaze;
 
-	public Monster(GamePanel pan,Maze theMaze) {
+	public Monster(GamePanel pan) {
 		this.pan = pan;
-		this.theMaze = theMaze;
 
 		solidArea = new Rectangle(8, 16, 32, 32);
 		solidAreaDefaultX=solidArea.x;
 		solidAreaDefaultY=solidArea.y;
-		
+		speed = 1;
+		direction = "down";
 		impassable=true;
-		
+				
 		getMonsterImage();
 		int[] monsterPosition = setMonsterPosition();
-		x = monsterPosition[0];
-		y = monsterPosition[1];
+		x = monsterPosition[0]; //column
+		y = monsterPosition[1]; //row
 	}
 	
 	public void getMonsterImage() {
@@ -72,7 +71,7 @@ public class Monster extends Character {
 		int randomR = 0;
 		int randomC = 0;
 		
-		while ((theMaze.maze[randomR][randomC]==1)||(theMaze.maze[randomR][randomC]==2)||((randomR==1)&&(randomC==1))) {
+		while ((pan.maze.maze[randomR][randomC]==1)||(pan.maze.maze[randomR][randomC]==2)||((randomR==1)&&(randomC==1))) {
 			Random rR = new Random();
 			Random rC = new Random();
 			randomR = rR.nextInt(pan.maxScreenRow);
@@ -90,16 +89,39 @@ public class Monster extends Character {
 	    int[] position = {x, y};
 		return position;
 	}
+
+	public void getMonsterDirection() {
+		
+		directionCounter++;
+		System.out.println(directionCounter);
+		
+		if (directionCounter == 120) {
+		
+			Random rD = new Random();
+			int randomD = rD.nextInt(120)+1;
+			
+			if (randomD <=30) {
+				direction = "up";
+			}
+			else if (randomD > 30 && randomD <= 60) {
+				direction = "down";
+			}
+			else if (randomD > 60 && randomD <= 90) {
+				direction = "left";
+			}
+			else if (randomD > 90 && randomD <= 120) {
+				direction = "right";
+			}
+			
+			directionCounter = 0;
+			
+		}
+	}
 	
 	// the update method gets called 60 times per second
-	public void update() {
+	public void update() { 
 		
 		spriteCounter ++;
-		
-		if (pan.hero.monsterOn == true) {
-			attack = true;
-		} 
-		
 		if (spriteCounter > 20) {
 			spriteNum++;
 			attack = false;
@@ -108,6 +130,30 @@ public class Monster extends Character {
 			}
 			spriteCounter = 0;
 		}
+		
+		getMonsterDirection(); 
+		collisionOn = false;
+		pan.collision.checkTile(this);
+		if (collisionOn == false) {
+			switch (direction) {
+				case "up":
+					y -= speed;
+					break;
+				case "down":
+					y += speed;
+					break;
+				case "left":
+					x -= speed;
+					break;
+				case "right":
+					x += speed;
+					break;
+			}
+		}	
+		
+		if (pan.hero.monsterOn == true) {
+			attack = true;
+		} 
 	
 	}
 	
