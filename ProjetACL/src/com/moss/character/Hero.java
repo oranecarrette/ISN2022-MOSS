@@ -138,27 +138,25 @@ public class Hero extends Character {
 			
 			
 			if (holeOn == true) {
-				currentLives = currentLives - 3;
-				pan.GI.gameOver = true;
+				currentLives = 0;
 			}
 			
 			if (monsterOn == true) {
 				currentLives = currentLives - 1;
 				switch (direction) {
 				case "up":
-					y += 10*speed;
+					y += 0.5*pan.tileSize;
 					break;
 				case "down":
-					y -= 10*speed;
+					y -= 0.5*pan.tileSize;
 					break;
 				case "left":
-					x += 10*speed;
+					x += 0.5*pan.tileSize;
 					break;
 				case "right":
-					x -= 10*speed;
+					x -= 0.5*pan.tileSize;
 					break;
 				}
-				System.out.println("vies "+currentLives);
 			}
 			
 			if (currentLives == 0) {
