@@ -7,7 +7,7 @@ import com.moss.character.Monster;
 //the class Collision is used to handle collisions between characters and the environment, and between characters themselves
 
 public class Collision {
-	
+
 	// MEMBER VARIABLES
 	GamePanel pan;
 	Monster monster;
