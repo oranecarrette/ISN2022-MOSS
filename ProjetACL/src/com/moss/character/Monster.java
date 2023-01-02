@@ -94,9 +94,6 @@ public class Monster extends Character {
 		int keyCol = keyPosition[0];
 		int keyRow = keyPosition[1];
 		
-<<<<<<< HEAD
-		while ((theMaze.maze[randomR][randomC]==1)||(theMaze.maze[randomR][randomC]==2)||((randomR==1)&&(randomC==1))) {
-=======
 		// While the random position matches the positions of impassable tiles, key or treasure,
 		// it keeps generating random position
 		while ((pan.maze.maze[randomR][randomC] == 1)
@@ -104,7 +101,6 @@ public class Monster extends Character {
 				||((randomR == 1)&&(randomC == 1))
 				||((randomR == treasureRow)&&(randomC == treasureCol))
 				||((randomR == keyRow)&&(randomC == keyCol))){
->>>>>>> 50148f21e683d1656e394d7fd9b549dd48ace630
 			Random rR = new Random();
 			Random rC = new Random();
 			randomR = rR.nextInt(pan.maxScreenRow);

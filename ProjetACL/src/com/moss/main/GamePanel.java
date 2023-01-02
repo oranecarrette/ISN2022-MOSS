@@ -38,10 +38,14 @@ public class GamePanel extends JPanel implements Runnable {
 	public Objects obj[]=new Objects[10];
 	public Key key = new Key(this);
 	public TreasureClose treasureC = new TreasureClose(this);
+	public Potion potion=new Potion(this);
 	public Life life = new Life(this);
+	public SpeedUp speed=new SpeedUp(this);
 	public void setupGame() {
 		key.setKeyPosition();
 		treasureC.setCloseTreasurePosition();
+		potion.setPotionPosition();
+		speed.setSpeedUpPosition();
 	}
 	public Monster monster = new Monster(this);
 

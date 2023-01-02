@@ -138,7 +138,16 @@ public class Hero extends Character {
 			case "Treasure open":
 				pan.GI.gameWon=true;
 				break;
+			case "Potion":
+				pan.obj[i]=null;
+				currentLives++;
+				break;
+			case "SpeedUp":
+				pan.obj[i]=null;
+				speed+=3;
+				break;
 			}
+			
 		}
 	}
 	
@@ -205,16 +214,6 @@ public class Hero extends Character {
 				currentLives = 0;
 			}
 			
-<<<<<<< HEAD
-			
-			if (holeOn == true) {
-				currentLives = 0;
-			}
-			
-			if (monsterOn == true) {
-				currentLives = currentLives - 1;
-				switch (direction) {
-=======
 			// If the hero encounters the monster...
 			if (pan.hero.monsterOn == true) {
 				
@@ -225,7 +224,6 @@ public class Hero extends Character {
 				
 				switch (pan.hero.direction) {
 				
->>>>>>> 50148f21e683d1656e394d7fd9b549dd48ace630
 				case "up":
 					y += 0.5*pan.tileSize;
 					break;
