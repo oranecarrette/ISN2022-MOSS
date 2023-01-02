@@ -1,46 +1,59 @@
 package com.moss.character;
 
+// USEFUL IMPORTS 
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
 
+// OTHER CLASSES IMPORTS
 import com.moss.main.GamePanel;
 import com.moss.main.Keyboard;
 import com.moss.main.Main;
-import com.moss.maze.Maze;
 import com.moss.object.TreasureOpen;
 
+// the class Hero is a subclass of the Character class and contains everything related to the player
+
 public class Hero extends Character {
+	
+	// MEMBER VARIABLES
 	GamePanel pan;
 	Keyboard keyboard;
+	
+	// INTERACTIONS WITH THE TREASURE KEY
 	public int hasKey=0;
-
+	
+	// DEFAULT CONSTRUCTOR
 	public Hero(GamePanel pan, Keyboard keyboard) {
 		this.pan = pan;
 		this.keyboard = keyboard;
 
-		// default values
-		x = 48; // x position
-		y = 40; // y position
+		// DEFAULT VALUES
+		// Motion 
+		x = 48; // abscissa | column
+		y = 40; // ordinate | row
+		speed = 2; // one leap equals a 2-pixel-movement
+		direction = "down";
+		// Collision with the environment and other characters
 		solidArea = new Rectangle(8, 16, 32, 32);
 		solidAreaDefaultX=solidArea.x;
 		solidAreaDefaultY=solidArea.y;
-		speed = 2; // move with a step of 2
-		direction = "down"; // picture's direction
+		// Lives
 		initialLives = 3;
 		currentLives = initialLives;
-		
-
-		getPlayerImage();
+		// Display
+		getHeroImage();
 	}
 
-	public void getPlayerImage() {
+	// METHODS
+	/* Method loading the different images of the hero */
+	public void getHeroImage() {
+		
 		String path = new String();
 		File file;
+		
 		try {
 			path = Main.currentDir + "/images/Hero/up/up_0.png";
 			file = new File(path);
@@ -54,6 +67,7 @@ public class Hero extends Character {
 			path = Main.currentDir + "/images/Hero/left/left_0.png";
 			file = new File(path);
 			left1 = ImageIO.read(file);
+			
 			path = Main.currentDir + "/images/Hero/up/up_1.png";
 			file = new File(path);
 			up2 = ImageIO.read(file);
@@ -66,6 +80,7 @@ public class Hero extends Character {
 			path = Main.currentDir + "/images/Hero/left/left_1.png";
 			file = new File(path);
 			left2 = ImageIO.read(file);
+			
 			path = Main.currentDir + "/images/Hero/up/up_2.png";
 			file = new File(path);
 			up3 = ImageIO.read(file);
@@ -80,6 +95,7 @@ public class Hero extends Character {
 			left3 = ImageIO.read(file);
 			path = Main.currentDir + "/images/Hero/up/up_3.png";
 			file = new File(path);
+			
 			up4 = ImageIO.read(file);
 			path = Main.currentDir + "/images/Hero/down/down_3.png";
 			file = new File(path);
@@ -90,13 +106,51 @@ public class Hero extends Character {
 			path = Main.currentDir + "/images/Hero/left/left_3.png";
 			file = new File(path);
 			left4 = ImageIO.read(file);
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-
+	
+	/* Method ???????????????????????????????????????????????????????????????????????????????? */
+	public void pickUpObject(int i) {
+		
+		if(i!=-1) {
+			
+			String objectName=pan.obj[i].name;
+			
+			switch(objectName) {
+			
+			case "Key":
+				hasKey++;
+				pan.obj[i]=null;
+				System.out.println("key: "+hasKey);
+				break;
+				
+			case "Treasure close":
+				if(hasKey>0) {
+					TreasureOpen treasureO = new TreasureOpen(pan);
+					treasureO.setOpenTreasurePosition();
+					hasKey--;
+				}
+				System.out.println("key: "+hasKey);
+				break;
+				
+			case "Treasure open":
+				pan.GI.gameWon=true;
+				break;
+			}
+		}
+	}
+	
+	/* Method called 60 times per second in the GamePanel class, allowing the update of :
+	 * - The hero's positions according to the environment and the actions of the player on the keyboard
+	 * - The hero's lives depending on the interactions with the environment and the other characters
+	 * - The hero's display depending on the direction of his movement 
+	 * */
 	public void update() {
+		
+		// UPDATE OF THE HERO'S POSITIONS
+		// Keyboard entry
 		if (keyboard.upPressed || keyboard.downPressed || keyboard.leftPressed || keyboard.rightPressed) {
 			if (keyboard.upPressed) {
 				direction = "up";
@@ -111,31 +165,47 @@ public class Hero extends Character {
 				direction = "right";
 			}
 			
+			// Consideration of the environment (characters, tiles, objects)
 			collisionOn = false;
 			holeOn = false;
 			monsterOn = false;
-			
-			pan.collision.checkTile(this, pan.monster);
+			pan.collision.checkTile(this); // method changing the values of the booleans collisionOn & holeOn
+			pan.collision.checkMonster(this); // method changing the values of the booleans collisionOn & monsterOn
 			int objectIndex = pan.collision.checkObject(this, true);
 			pickUpObject(objectIndex);
 			
+			// If the next tile can be passed through...  
 			if (collisionOn == false) {
+				
 				switch (direction) {
+				// ...the hero can move
+				
 				case "up":
 					y -= speed;
 					break;
+					
 				case "down":
 					y += speed;
 					break;
+					
 				case "left":
 					x -= speed;
 					break;
+					
 				case "right":
 					x += speed;
 					break;
 				}
+			}		
+			
+			// UPDATE OF THE HERO'S LIVES
+			// If the next tile is a hole... 
+			if (pan.hero.holeOn == true) {
+				// ...the hero loses all of his lives
+				currentLives = 0;
 			}
 			
+<<<<<<< HEAD
 			
 			if (holeOn == true) {
 				currentLives = 0;
@@ -144,26 +214,40 @@ public class Hero extends Character {
 			if (monsterOn == true) {
 				currentLives = currentLives - 1;
 				switch (direction) {
+=======
+			// If the hero encounters the monster...
+			if (pan.hero.monsterOn == true) {
+				
+				// ...the hero loses 1 life
+				pan.hero.currentLives -= 1;
+				// ...the monster steps back in the direction he was coming from,
+				// with a leap of half a tile size
+				
+				switch (pan.hero.direction) {
+				
+>>>>>>> 50148f21e683d1656e394d7fd9b549dd48ace630
 				case "up":
-					y += 10*speed;
+					y += 0.5*pan.tileSize;
 					break;
+					
 				case "down":
-					y -= 10*speed;
+					y -= 0.5*pan.tileSize;
 					break;
+					
 				case "left":
-					x += 10*speed;
+					x += 0.5*pan.tileSize;
 					break;
+					
 				case "right":
-					x -= 10*speed;
+					x -= 0.5*pan.tileSize;
 					break;
 				}
-				System.out.println("vies "+currentLives);
-			}
-			
-			if (currentLives == 0) {
-				pan.GI.gameOver = true;
 			}
 
+			// UPDATE OF THE HERO'S DISPLAY
+			/* The hero can be displayed in 12 ways considering his movement direction (up, down, left, right).
+			 * There are 4 images for each direction, to give the illusion that the hero is walking with his arms balancing. 
+			 *  */
 			spriteCounter++;
 			if (spriteCounter > 12) {
 				spriteNum++;
@@ -173,38 +257,15 @@ public class Hero extends Character {
 				spriteCounter = 0;
 			}
 		}
-
 	}
 	
-	public void pickUpObject(int i) {
-		if(i!=-1) {
-			String objectName=pan.obj[i].name;
-			switch(objectName) {
-			case "Key":
-				hasKey++;
-				pan.obj[i]=null;
-				System.out.println("key: "+hasKey);
-				break;
-			case "Treasure close":
-				if(hasKey>0) {
-					pan.obj[i]=new TreasureOpen();
-					pan.obj[i].x=13*pan.tileSize;
-					pan.obj[i].y=10*pan.tileSize;
-					hasKey--;
-				}
-				System.out.println("key: "+hasKey);
-				break;
-			case "Treasure open":
-				pan.GI.gameWon=true;
-				break;
-			}
-		}
-	}
-
+	/* Method displaying the hero by taking into account the direction of this movement */
 	public void draw(Graphics2D g2) {
+		
 		BufferedImage image = null;
 
 		switch (direction) {
+		
 		case "up":
 			if (spriteNum == 1) {
 				image = up1;
@@ -219,6 +280,7 @@ public class Hero extends Character {
 				image = up4;
 			}
 			break;
+			
 		case "down":
 			if (spriteNum == 1) {
 				image = down1;
@@ -233,6 +295,7 @@ public class Hero extends Character {
 				image = down4;
 			}
 			break;
+			
 		case "left":
 			if (spriteNum == 1) {
 				image = left1;
@@ -247,6 +310,7 @@ public class Hero extends Character {
 				image = left4;
 			}
 			break;
+			
 		case "right":
 			if (spriteNum == 1) {
 				image = right1;
