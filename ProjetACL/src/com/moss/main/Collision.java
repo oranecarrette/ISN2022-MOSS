@@ -84,6 +84,7 @@ public class Collision {
 		}
 	}
 	
+	
 	public int checkObject(Character character,boolean hero) {
 		int index=-1;
 		for(int i=0;i<pan.obj.length;i++) {

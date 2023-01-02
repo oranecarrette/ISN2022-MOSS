@@ -138,8 +138,7 @@ public class Hero extends Character {
 			
 			
 			if (holeOn == true) {
-				currentLives = currentLives - 3;
-				pan.GI.gameOver = true;
+				currentLives = 0;
 			}
 			
 			if (monsterOn == true) {

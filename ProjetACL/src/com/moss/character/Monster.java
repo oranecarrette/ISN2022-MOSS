@@ -50,7 +50,7 @@ public class Monster extends Character {
 		int randomR = 0;
 		int randomC = 0;
 		
-		while ((theMaze.maze[randomR][randomC]==1)||(theMaze.maze[randomR][randomC]==2)||((randomR==0)&&(randomC==0))) {
+		while ((theMaze.maze[randomR][randomC]==1)||(theMaze.maze[randomR][randomC]==2)||((randomR==1)&&(randomC==1))) {
 			Random rR = new Random();
 			Random rC = new Random();
 			randomR = rR.nextInt(pan.maxScreenRow);

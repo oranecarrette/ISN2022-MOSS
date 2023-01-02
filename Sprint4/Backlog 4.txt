@@ -1,6 +1,9 @@
 FONCTIONNALITES
-A définir
-
+1) Le héros peut récupérer une vie en ramassant une potion 
+2) Le monstre se déplace dans le labyrinthe 
+3) Le monstre a une animation de déplacement 
+4) Le monstre devient rouge quand il attaque
+5) Il y a une musique 
+6) Le labyrinthe est choisi aléatoirement entre plusieurs modèles au début du jeu
 
 REPARTITION DES TACHES
-A définir
