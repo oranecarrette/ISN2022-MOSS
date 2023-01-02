@@ -41,13 +41,12 @@ public class GamePanel extends JPanel implements Runnable {
 	public Potion potion=new Potion(this);
 	public Life life = new Life(this);
 	public SpeedUp speed=new SpeedUp(this);
-	public void setupGame() {
-		key.setKeyPosition();
-		treasureC.setCloseTreasurePosition();
-		potion.setPotionPosition();
-		speed.setSpeedUpPosition();
-	}
 	public Monster monster = new Monster(this);
+	
+	Sound sound=new Sound();
+	Sound music=new Sound();
+	
+	
 
 	// DEFAULT CONSTRUCTOR
 	public GamePanel() {
@@ -63,6 +62,14 @@ public class GamePanel extends JPanel implements Runnable {
 	public void startGameThread() {
 		gameThread = new Thread(this); // new instance of the Thread Class
 		gameThread.start(); // thread's launch
+	}
+	
+	public void setupGame() {
+		key.setKeyPosition();
+		treasureC.setCloseTreasurePosition();
+		potion.setPotionPosition();
+		speed.setSpeedUpPosition();
+		playMusic(0);
 	}
 
 	/* Method calling all the update() functions */
@@ -87,6 +94,21 @@ public class GamePanel extends JPanel implements Runnable {
 		monster.draw(g2);
 		GI.draw(g2);
 		g2.dispose();
+	}
+	
+	public void playMusic(int i) {
+		music.setFile(i);
+		music.play();
+		music.loop();
+	}
+	
+	public void stopMusic() {
+		music.stop();
+	}
+	
+	public void playSE(int i) {
+		sound.setFile(i);
+		sound.play();
 	}
 
 	@Override

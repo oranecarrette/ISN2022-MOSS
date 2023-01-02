@@ -121,6 +121,7 @@ public class Hero extends Character {
 			switch(objectName) {
 			
 			case "Key":
+				pan.playSE(4);
 				hasKey++;
 				pan.obj[i]=null;
 				System.out.println("key: "+hasKey);
@@ -136,15 +137,19 @@ public class Hero extends Character {
 				break;
 				
 			case "Treasure open":
+				pan.stopMusic();
+				pan.playMusic(2);
 				pan.GI.gameWon=true;
 				break;
 			case "Potion":
+				pan.playSE(1);
 				pan.obj[i]=null;
 				currentLives++;
 				break;
 			case "SpeedUp":
+				pan.playSE(3);;
 				pan.obj[i]=null;
-				speed+=3;
+				speed+=2;
 				break;
 			}
 			
