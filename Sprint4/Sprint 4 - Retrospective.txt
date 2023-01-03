@@ -1,0 +1,9 @@
+Sprint 4 - Retrospective
+
+CE QUI A BIEN MARCHE :
+- Toutes les fonctionnalités prévues par le Backlog 4 ont été réalisées.
+- Des commentaires ont été ajoutés dans le code afin de faciliter sa lisibilité.
+- Une fonctionnalité supplémentaire a été ajoutée qui augmente la vitesse du héros.
+
+CE QUI N'A PAS BIEN MARCHE :
+- En général, tout a marché, car il a été possible de réaliser toutes les tâches dans le temps stipulé.

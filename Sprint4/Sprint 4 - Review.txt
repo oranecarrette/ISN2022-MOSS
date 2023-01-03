@@ -1,0 +1,25 @@
+Sprint 4 - Review
+
+FONCTIONNALITES
+1) Le héros peut récupérer une vie en ramassant une potion : FAIT
+2) Le monstre se déplace dans le labyrinthe : FAIT
+3) Le monstre a une animation de déplacement : FAIT
+4) Le monstre devient rouge quand il attaque : FAIT
+5) Il y a une musique : FAIT
+6) Le labyrinthe est choisi aléatoirement entre plusieurs modèles au début du jeu : FAIT
+
+REPARTITION DES TACHES
+1) Potion de vie : FAIT
+2) Déplacement aléatoire du monstre : FAIT
+3) Animation du monstre (sur place et attaque) : FAIT
+4) Affichage des vies vides : FAIT
+5) Musique de fond : FAIT
+6) Création de différents labyrinthes : FAIT
+7) Sélection aléatoire du labyrinthe au début du jeu : FAIT
+8) Amélioration de la détection des trous : FAIT
+9) Amélioration de la déclaration des objets : FAIT
+10) Commentaires du code & amélioration de sa lisibilité : FAIT
+
+Backlog 4 respecté
+
+- À la fin, un outil a été ajouté dans lequel le héros gagne en vitesse dans ses mouvements.
