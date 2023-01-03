@@ -35,17 +35,16 @@ public class GamePanel extends JPanel implements Runnable {
 	public Collision collision = new Collision(this);
 	public Maze maze = new Maze(this);
 	public Hero hero = new Hero(this, keyboard);
-	public Objects obj[]=new Objects[10];
+	public Objects obj[] = new Objects[10];
 	public Key key = new Key(this);
 	public TreasureClose treasureC = new TreasureClose(this);
-	public Potion potion=new Potion(this);
+	public Potion potion = new Potion(this);
 	public Life life = new Life(this);
-	public SpeedUp speed=new SpeedUp(this);
+	public SpeedUp speed = new SpeedUp(this);
 	public Monster monster = new Monster(this);
 	
 	Sound sound=new Sound();
 	Sound music=new Sound();
-	
 	
 
 	// DEFAULT CONSTRUCTOR

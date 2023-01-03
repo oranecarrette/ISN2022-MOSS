@@ -86,21 +86,29 @@ public class Monster extends Character {
 		// Initialization of the random position
 		int randomR = 0;
 		int randomC = 0;
-		// Get of the treasure and key positions
+		// Get of the treasure, key, potion and speed up positions
 		int[] treasurePosition = pan.treasureC.getCloseTreasurePosition();
 		int treasureCol = treasurePosition[0];
 		int treasureRow = treasurePosition[1];
 		int[] keyPosition = pan.key.getKeyPosition();
 		int keyCol = keyPosition[0];
 		int keyRow = keyPosition[1];
+		int[] potionPosition = pan.potion.getPotionPosition();
+		int potionCol = potionPosition[0];
+		int potionRow = potionPosition[1];
+		int[] speedUpPosition = pan.speed.getSpeedUpPosition();
+		int speedUpCol = speedUpPosition[0];
+		int speedUpRow = speedUpPosition[1];
 		
-		// While the random position matches the positions of impassable tiles, key or treasure,
+		// While the random position matches the positions of impassable tiles, treasure, key, potion and speed up
 		// it keeps generating random position
 		while ((pan.maze.maze[randomR][randomC] == 1)
 				||(pan.maze.maze[randomR][randomC] == 2)
 				||((randomR == 1)&&(randomC == 1))
 				||((randomR == treasureRow)&&(randomC == treasureCol))
-				||((randomR == keyRow)&&(randomC == keyCol))){
+				||((randomR == keyRow)&&(randomC == keyCol))
+				||((randomR == potionRow)&&(randomC == potionCol))
+				||((randomR == speedUpRow)&&(randomC == speedUpCol))){
 			Random rR = new Random();
 			Random rC = new Random();
 			randomR = rR.nextInt(pan.maxScreenRow);

@@ -141,15 +141,17 @@ public class Hero extends Character {
 				pan.playMusic(2);
 				pan.GI.gameWon=true;
 				break;
+				
 			case "Potion":
 				pan.playSE(1);
 				pan.obj[i]=null;
 				currentLives++;
 				break;
+				
 			case "SpeedUp":
 				pan.playSE(3);;
 				pan.obj[i]=null;
-				speed+=2;
+				speed+=1;
 				break;
 			}
 			
