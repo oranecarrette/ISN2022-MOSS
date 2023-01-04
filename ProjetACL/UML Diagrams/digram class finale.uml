@@ -1,2 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_VoVJoIvEEe2Sk7G5gjt1tA" name="digram_class_finale"/>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_VoVJoIvEEe2Sk7G5gjt1tA" name="digram_class_finale">
+    <eAnnotations xmi:id="_5UoOAIvEEe2Sk7G5gjt1tA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_5UoOAYvEEe2Sk7G5gjt1tA" source="codegen">
+        <details xmi:id="_5UoOAovEEe2Sk7G5gjt1tA" key="codegenDirectory" value="/ProjetACL/src"/>
+        <details xmi:id="_5bLh8IvEEe2Sk7G5gjt1tA" key="AssociatedSourceCode" value="/ProjetACL/src/com/moss/character/Character.java;4218957699/1;/ProjetACL/src/com/moss/character/Hero.java;2413838419/1;/ProjetACL/src/com/moss/character/Monster.java;3707181575/1;/ProjetACL/src/com/moss/main/Collision.java;3572278527/1;/ProjetACL/src/com/moss/main/GameInterface.java;688945370/1;/ProjetACL/src/com/moss/main/Keyboard.java;2669824851/1;/ProjetACL/src/com/moss/main/Main.java;55988841/1;/ProjetACL/src/com/moss/main/Sound.java;208303769/1;/ProjetACL/src/com/moss/main/Window.java;2331642644/1;/ProjetACL/src/com/moss/maze/Maze.java;1664462458/1;/ProjetACL/src/com/moss/maze/Tile.java;341855178/1;/ProjetACL/src/com/moss/object/Key.java;3108128536/1;/ProjetACL/src/com/moss/object/Life.java;995124301/1;/ProjetACL/src/com/moss/object/Objects.java;3673836363/1;/ProjetACL/src/com/moss/object/Potion.java;404797368/1;/ProjetACL/src/com/moss/object/SpeedUp.java;2338597671/1;/ProjetACL/src/com/moss/object/TreasureClose.java;3506860883/1;/ProjetACL/src/com/moss/object/TreasureOpen.java;475598201/1;/ProjetACL/src/com/moss/main/GamePanel.java;1355169783/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_5UrRUIvEEe2Sk7G5gjt1tA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_5Ur4YIvEEe2Sk7G5gjt1tA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_5Ur4YYvEEe2Sk7G5gjt1tA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_5Ur4YovEEe2Sk7G5gjt1tA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_5Ur4Y4vEEe2Sk7G5gjt1tA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_5UsfcIvEEe2Sk7G5gjt1tA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_5UsfcYvEEe2Sk7G5gjt1tA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_5UsfcovEEe2Sk7G5gjt1tA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_5UttkIvEEe2Sk7G5gjt1tA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_5UE0YIvEEe2Sk7G5gjt1tA" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_5UHQoIvEEe2Sk7G5gjt1tA" name="moss">
+        <packagedElement xmi:type="uml:Package" xmi:id="_5US20IvEEe2Sk7G5gjt1tA" name="character"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_7lWTcovEEe2Sk7G5gjt1tA" name="main"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_7lWTc4vEEe2Sk7G5gjt1tA" name="object"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_91o7EIvEEe2Sk7G5gjt1tA" name="maze"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_5UJs4IvEEe2Sk7G5gjt1tA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_5UKT8IvEEe2Sk7G5gjt1tA" name="awt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_5UKT8YvEEe2Sk7G5gjt1tA" name="image">
+          <packagedElement xmi:type="uml:Class" xmi:id="_5VYb8IvEEe2Sk7G5gjt1tA" name="BufferedImage"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_5VTjcIvEEe2Sk7G5gjt1tA" name="Rectangle"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7mjNUIvEEe2Sk7G5gjt1tA" name="Graphics2D"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_91gYMIvEEe2Sk7G5gjt1tA" name="event">
+          <packagedElement xmi:type="uml:Class" xmi:id="_96JnoIvEEe2Sk7G5gjt1tA" name="KeyEvent"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_96KOsIvEEe2Sk7G5gjt1tA" name="KeyListener"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_96FWMIvEEe2Sk7G5gjt1tA" name="Color"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_96F9QYvEEe2Sk7G5gjt1tA" name="Font"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_96dJoIvEEe2Sk7G5gjt1tA" name="Dimension"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_96dwsIvEEe2Sk7G5gjt1tA" name="Graphics"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_7lVsYIvEEe2Sk7G5gjt1tA" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_7mkbcIvEEe2Sk7G5gjt1tA" name="File"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7mlCgYvEEe2Sk7G5gjt1tA" name="IOException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_96QVUYvEEe2Sk7G5gjt1tA" name="BufferedReader"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_96Q8YYvEEe2Sk7G5gjt1tA" name="FileReader"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_7lZ90IvEEe2Sk7G5gjt1tA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_7mqiEIvEEe2Sk7G5gjt1tA" name="Random"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_96RjcYvEEe2Sk7G5gjt1tA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_96SKgIvEEe2Sk7G5gjt1tA" name="Arrays"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_96SKgovEEe2Sk7G5gjt1tA" name="Collections"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_91fKEIvEEe2Sk7G5gjt1tA" name="text">
+        <packagedElement xmi:type="uml:Class" xmi:id="_96GkUYvEEe2Sk7G5gjt1tA" name="DecimalFormat"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_91jbgIvEEe2Sk7G5gjt1tA" name="nio">
+        <packagedElement xmi:type="uml:Package" xmi:id="_91jbgYvEEe2Sk7G5gjt1tA" name="file">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_96MD4IvEEe2Sk7G5gjt1tA" name="Path"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_96Mq8IvEEe2Sk7G5gjt1tA" name="Paths"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_91kpoIvEEe2Sk7G5gjt1tA" name="net">
+        <packagedElement xmi:type="uml:Class" xmi:id="_96NSAIvEEe2Sk7G5gjt1tA" name="URL"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_964ncIvEEe2Sk7G5gjt1tA" name="lang">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_964ncYvEEe2Sk7G5gjt1tA" name="Runnable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_9651kIvEEe2Sk7G5gjt1tA" name="Thread"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_7lWTcIvEEe2Sk7G5gjt1tA" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_7lWTcYvEEe2Sk7G5gjt1tA" name="imageio">
+        <packagedElement xmi:type="uml:Class" xmi:id="_7mlpkYvEEe2Sk7G5gjt1tA" name="ImageIO"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_91kpoYvEEe2Sk7G5gjt1tA" name="sound">
+        <packagedElement xmi:type="uml:Package" xmi:id="_91kpoovEEe2Sk7G5gjt1tA" name="sampled">
+          <packagedElement xmi:type="uml:Class" xmi:id="_96N5EYvEEe2Sk7G5gjt1tA" name="AudioInputStream"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_96OgIIvEEe2Sk7G5gjt1tA" name="AudioSystem"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_96OgIovEEe2Sk7G5gjt1tA" name="Clip"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_91me0IvEEe2Sk7G5gjt1tA" name="swing">
+        <packagedElement xmi:type="uml:Class" xmi:id="_96PuQIvEEe2Sk7G5gjt1tA" name="JFrame"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_96eXwIvEEe2Sk7G5gjt1tA" name="JPanel"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_5UfEEIvEEe2Sk7G5gjt1tA">
+      <eAnnotations xmi:id="_5UiucIvEEe2Sk7G5gjt1tA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:Reference xmi:id="_5VVYoIvEEe2Sk7G5gjt1tA" base_Element="_5VTjcIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_5VZqEIvEEe2Sk7G5gjt1tA" base_Element="_5VYb8IvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_7mj0YIvEEe2Sk7G5gjt1tA" base_Element="_7mjNUIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_7mlCgIvEEe2Sk7G5gjt1tA" base_Element="_7mkbcIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_7mlpkIvEEe2Sk7G5gjt1tA" base_Element="_7mlCgYvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_7mlpkovEEe2Sk7G5gjt1tA" base_Element="_7mlpkYvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_7mrJIIvEEe2Sk7G5gjt1tA" base_Element="_7mqiEIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96F9QIvEEe2Sk7G5gjt1tA" base_Element="_96FWMIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96GkUIvEEe2Sk7G5gjt1tA" base_Element="_96F9QYvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96HLYIvEEe2Sk7G5gjt1tA" base_Element="_96GkUYvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96JnoYvEEe2Sk7G5gjt1tA" base_Element="_96JnoIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96KOsYvEEe2Sk7G5gjt1tA" base_Element="_96KOsIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96MD4YvEEe2Sk7G5gjt1tA" base_Element="_96MD4IvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96Mq8YvEEe2Sk7G5gjt1tA" base_Element="_96Mq8IvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96N5EIvEEe2Sk7G5gjt1tA" base_Element="_96NSAIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96N5EovEEe2Sk7G5gjt1tA" base_Element="_96N5EYvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96OgIYvEEe2Sk7G5gjt1tA" base_Element="_96OgIIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96PHMIvEEe2Sk7G5gjt1tA" base_Element="_96OgIovEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96QVUIvEEe2Sk7G5gjt1tA" base_Element="_96PuQIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96Q8YIvEEe2Sk7G5gjt1tA" base_Element="_96QVUYvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96RjcIvEEe2Sk7G5gjt1tA" base_Element="_96Q8YYvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96RjcovEEe2Sk7G5gjt1tA" base_Element="_96RjcYvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96SKgYvEEe2Sk7G5gjt1tA" base_Element="_96SKgIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96SxkIvEEe2Sk7G5gjt1tA" base_Element="_96SKgovEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96dJoYvEEe2Sk7G5gjt1tA" base_Element="_96dJoIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96dwsYvEEe2Sk7G5gjt1tA" base_Element="_96dwsIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_96eXwYvEEe2Sk7G5gjt1tA" base_Element="_96eXwIvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_965OgIvEEe2Sk7G5gjt1tA" base_Element="_964ncYvEEe2Sk7G5gjt1tA"/>
+  <UMLLabProfile:Reference xmi:id="_966coIvEEe2Sk7G5gjt1tA" base_Element="_9651kIvEEe2Sk7G5gjt1tA"/>
+</xmi:XMI>
